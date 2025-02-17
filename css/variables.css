@@ -1,6 +1,6 @@
 @charset "utf-8";
 :root{
-    /* Color styles */
+    /* 컬러 */
 --color--product-bg: rgba(246, 246, 246, 1);
 --color--dark--x-l: rgba(34, 34, 34, 1);
 --color--darkgrey--l: rgba(85, 81, 81, 1);
@@ -9,11 +9,16 @@
 --color--lightgray--s: rgba(217, 217, 217, 1);
 --stroke--nav-depth-box: rgba(226, 226, 226, 1);
 
-/* Text-size styles */
+/* 폰트 사이즈 */
 --font--fontsize--x-l: 45px;
 --font--fontsize--l: 28px;
 --font--fontsize--m: 26px;
 --font--fontsize--s: 23px;
 --font--fontsize--x-s: 15px;
 --font--fonsize--x-x-s: 12px;
+
+  /* 간격 (수정필요)*/
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
 }
