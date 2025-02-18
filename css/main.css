@@ -36,6 +36,6 @@ h2{
 .wrap-inner {
   width: 100%;
   max-width: 1595px;
-  background-color: bisque;
+  /* background-color: bisque; */
   margin: auto;
 }
