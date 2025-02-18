@@ -1,0 +1,10 @@
+@charset "utf-8";
+.best{
+    width: 100%;
+    background-color: yellowgreen;
+}
+.best-inner{
+    width: 80%;
+    max-width: 1595px;
+    background-color: thistle;
+}
