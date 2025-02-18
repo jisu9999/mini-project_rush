@@ -71,7 +71,7 @@
 }
 
 /* depth2 */
-.nav > .gnb > li > .depth2 {
+/* .nav > .gnb > li > .depth2 {
   position: relative;
   width: 100%;
   display: none;
@@ -87,15 +87,16 @@
   line-height: 40px;
   text-align: left;
   color: #9c9c9c;
-}
+} */
 
 /* =========모바일용 메뉴 =========*/
 /* 아이콘 모바일 메뉴 */
-/* .mb-xi {
+.mb-xi {
   cursor: pointer;
   display: none;
 }
 .mobile-nav {
+  display: none;
   position: fixed;
   top: 0;
   right: -300px;
@@ -106,7 +107,7 @@
   padding-top: 100px;
   z-index: 99999;
 }
-.mobile-nav .gnb {
+/* .mobile-nav .gnb {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -124,7 +125,7 @@
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
-} */
+} 
 /* .mobile-nav .depth2 {
   display: none;
 }
@@ -148,7 +149,7 @@
   top: 45px;
   right: 20px;
   cursor: pointer;
-} */
+} */ 
 
 /* ===========반응형페이지========== */
 @media screen and (max-width: 1920px) {
