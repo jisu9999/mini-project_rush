@@ -34,24 +34,26 @@
   color: var(--color--dark--x-l);
 }
 .best-prd-box .prd-category {
-  font-size: var(--font--fontsize--x-s);
+  font-size: 14px;
   font-weight: 400;
   color: var(--color--grey--m);
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .best-prd-box .price-box {
   margin-top: 20px;
+  /* background-color: violet; */
 }
 .best-prd-box .price {
-  font-size: var(--font--fontsize--s);
+  font-size: 20px;
   font-weight: 400;
   color: var(--color--dark--x-l);
   margin-bottom: 6px;
 }
 .best-prd-box .review-num {
-  font-size: var(--color--white--x-s);
+  font-size: 14px;
   font-weight: 400;
   color: var(--color--grey--m);
+  /* background-color: yellowgreen; */
 }
 .best-prd-box .tag {
   width: 40%;
