@@ -2,7 +2,45 @@
 
 /* ----- service txt----- */
 /* 큰제목 */
-.h_service h2 {
-  padding: 8% 0;
+/* ----- event txt----- */
+/* 스와이퍼 txt */
+.service-title{
+  font-size: 18px;
+  color: var(--color--dark--x-l);
+  font-weight: bold;
+  margin: 2% 0 3% 0;
+  letter-spacing: -2px;
+}
+.service-txt {
+  font-size: var(--font--fonsize--x-s);
+  color: var(--color--grey--m);
+  line-height: 1.5rem;
+  letter-spacing: -1px;
 }
 
+/* 전체영역 */
+.h_service {
+  width: 100%;
+  background-color: pink;
+}
+/* 내부영역 */
+.h_service .wrap-inner {
+  width: 100%;
+  background-color: yellow;
+}
+/* 서비스 전체영역 */
+.service-card {
+  width: 100%;
+  position: relative;
+  /* background-color: blue; */
+}
+/* 서비스 스와이퍼 내부영역 */
+.serviceSwiper a {
+  width: 60%;
+  background-color: red;
+}
+.serviceSwiper a img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
