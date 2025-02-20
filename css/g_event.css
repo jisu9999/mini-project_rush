@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* ----- event txt----- */
+/* 스와이퍼 txt */
+.event-title {
+  font-size: var(--font--fontsize--l);
+  color: var(--color--dark--x-l);
+  font-weight: bold;
+  margin: 2% 0 1% 0;
+  letter-spacing: -2px;
+}
+.event-txt {
+  font-size: var(--font--fontsize--s);
+  color: var(--color--grey--m);
+  letter-spacing: -2px;
+}
+/* 전체영역 */
+.g_event {
+  width: 100%;
+}
+/* swiper-js */
+.eventSwiper .swiper {
+  width: 100%;
+}
+.eventSwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.eventSwiper .swiper-slide a {
+  width: 100%;
+}
+.eventSwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/* 스와이퍼 버튼 위치 조정 */
+.wrap-inner {
+  position: relative;
+}
+.eventSwiper {
+  position: relative;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-paginaton-custom,
+.swiper-pagination-fraction {
+  top: var(--swiper-pagination-top, 250px) !important;
+  bottom: var(--swiper-pagination-bottom, auto) !important;
+  left: 1465px !important;
+  width: 10% !important;
+}
+.eventSwiper .swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  text-align: center;
+  line-height: 20px !important;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+i .g_event .swiper-pagination-bullet-active {
+  width: 40px !important;
+  height: 40px !important;
+  color: #fff;
+  background: var(--color--dark--x-l) !important;
+}
