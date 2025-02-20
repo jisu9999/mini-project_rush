@@ -1,45 +1,101 @@
 @charset "utf-8";
+.wrap {
+  width: 100%;
+  /* height: 2000vh; */
+  background-color: #fff;
+}
 
+/* ----- review txt----- */
+/* 상품명 */
+.f_review h3 {
+  font-size: var(--font--fontsize--l);
+  color: var(--color--dark--x-l);
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+/* 별점 txt */
+.f_review .star span {
+  font-size: var(--font--fonsize--x-s);
+  color: var(--color--grey--m);
+}
+/* 리뷰어 글 */
+.f_review .review p {
+  font-size: var(--font--fonsize--x-s);
+  color: var(--color--dark--x-l);
+  line-height: 1.3;
+}
+/* 리뷰어 정보, 날짜 */
+.f_review .review span {
+  font-size: var(--font--fonsize--x-s);
+  color: var(--color--grey--m);
+}
+
+/* -----전체영역----- */
 .f_review {
   width: 100%;
-  display: flex;
-}
-.f_review .wrap-inner {
   position: relative;
+  /* display: flex; */
+}
+/* 내부영역 */
+.f_review .wrap-inner .review-all {
+  gap: 3%;
+}
+/* 리뷰 전체영역 */
+.wrap-inner .f_review {
+  position: absolute;
 }
 .f_review .review-all {
+  /* position: absolute; */
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+/* 리뷰 개별영역묶음 */
 .f_review .review-card {
   width: 500px;
-  height: 500px;
+  /* height: 500px; */
 }
 .review-main img {
   width: 100%;
 }
+/* 별점 영역 */
 .star {
   width: 38%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
 }
 .star span {
   display: block;
 }
+/* 리뷰어 영역 */
 .review {
   display: flex;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
 }
+/* 리뷰어 내용 */
 .review-sub {
-  height: 30%;
+  height: auto;
 }
 .review-sub p {
   width: 90%;
   display: block;
 }
+.review-sub1 {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+.review-sub2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 리뷰어 서브이미지 */
 .review-sub-img a {
   display: block;
   width: 80px;
@@ -51,39 +107,4 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.review-sub1 {
-  width: 100%;
-  display: flex;
-}
-.review-sub2 {
-  width: 100%;
-  display: block;
-  background-color: pink;
-}
-
-/* review txt */
-.f_review h2 {
-  padding: 8% 0;
-}
-.f_review h3 {
-  font-size: var(--font--fontsize--l);
-  color: var(--color--dark--x-l);
-  font-weight: bold;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-all;
-}
-.f_review .star span {
-  font-size: var(--font--fonsize--x-s);
-  color: var(--color--grey--m);
-}
-.f_review .review p {
-  font-size: var(--font--fonsize--x-s);
-  color: var(--color--dark--x-l);
-  line-height: 1.3;
-}
-.f_review .review span {
-  font-size: var(--font--fonsize--x-s);
-  color: var(--color--grey--m);
 }
