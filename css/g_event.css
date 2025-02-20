@@ -45,7 +45,7 @@
 .eventSwiper {
   position: relative;
 }
-.swiper-horizontal > .swiper-pagination-bullets,
+.eventSwiper .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-paginaton-custom,
 .swiper-pagination-fraction {
