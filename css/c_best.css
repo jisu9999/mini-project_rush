@@ -10,65 +10,66 @@
 .bestSwiper {
   position: relative;
   width: 100%;
-  height: 33.9vw;
-  margin-top: 60px;
+  /* height: 29vw; */
+  /* background-color: yellowgreen; */
+  /* margin-top: 70px; */
 }
 /* .best-prd-box{
     width: 100%
 } */
-.thumbnail {
+.best-prd-box .thumbnail {
   background-color: var(--color--product-bg);
 }
-.thumbnail a img {
+.best-prd-box .thumbnail a img {
   width: 100%;
 }
-.description {
+.best-prd-box .description {
   position: relative;
   padding: 40px 0 20px;
   background-color: #fff;
 }
-.prd-name {
-  font-size: 20px;
+.best-prd-box .prd-name {
+  font-size: 18px;
   font-weight: 600;
   color: var(--color--dark--x-l);
 }
-.prd-category {
+.best-prd-box .prd-category {
   font-size: var(--font--fontsize--x-s);
   font-weight: 400;
   color: var(--color--grey--m);
   margin-top: 10px;
 }
-.price-box {
+.best-prd-box .price-box {
   margin-top: 20px;
 }
-.price {
+.best-prd-box .price {
   font-size: var(--font--fontsize--s);
   font-weight: 400;
   color: var(--color--dark--x-l);
   margin-bottom: 6px;
 }
-.review-num {
+.best-prd-box .review-num {
   font-size: var(--color--white--x-s);
   font-weight: 400;
   color: var(--color--grey--m);
 }
-.tag {
-  width: 35%;
+.best-prd-box .tag {
+  width: 40%;
   display: flex;
   position: absolute;
   top: 20px;
   right: 0;
 }
-.tag li img {
+.best-prd-box .tag li img {
   width: 100%;
 }
-.best .swiper-button-prev:after {
+.best .swiper-button-prev {
   position: absolute;
   top: 50%;
   left: 85px;
   color: var(--color--grey--m);
 }
-.best .swiper-button-next:after {
+.best .swiper-button-next {
   position: absolute;
   top: 50%;
   right: 85px;
