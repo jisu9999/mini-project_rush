@@ -1,5 +1,7 @@
 window.onload = function () {
+
   const swiper1 = new Swiper(".bestSwiper", {
+
     slidesPerView: 4,
     spaceBetween: 30,
     pagination: {
@@ -7,6 +9,7 @@ window.onload = function () {
       clickable: true,
     },
     navigation: {
+
       nextEl: ".swiper1-next",
       prevEl: ".swiper1-prev",
     },
@@ -21,6 +24,7 @@ window.onload = function () {
     navigation: {
       nextEl: ".swiper2-next",
       prevEl: ".swiper2-prev",
+
     },
   });
 };
