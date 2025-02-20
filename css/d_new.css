@@ -32,16 +32,16 @@
   color: var(--color--dark--x-l);
 }
 .new-prd-box .prd-category {
-  font-size: var(--font--fontsize--x-s);
+  font-size: 14px;
   font-weight: 400;
   color: var(--color--grey--m);
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .new-prd-box .price-box {
   margin-top: 20px;
 }
 .new-prd-box .price {
-  font-size: var(--font--fontsize--s);
+  font-size: 20px;
   font-weight: 400;
   color: var(--color--dark--x-l);
   margin-bottom: 6px;
