@@ -48,6 +48,7 @@
     <script src="js/b_visual.js"></script>
     <script src="js/c_best.js"></script>
     <script src="js/d_new.js"></script>
+    <script src="js/e_pick.js"></script>
     <script src="js/f_review.js"></script>
     <script src="js/g_event.js"></script>
     <script src="js/h_service.js"></script>
@@ -926,10 +927,10 @@
         <div class="wrap-inner">
           <h2>에디터 PICK!</h2>
           <div class="pick-btn">
-            <button class="fresh">프레쉬4</button>
-            <button class="care">보습케어</button>
+            <button class="pickBtn" id="freshBtn" onclick="openTab('fresh', this)">프레쉬4</button>
+            <button class="pickBtn" id="careBtn" onclick="openTab('care', this)">보습케어</button>
           </div>
-          <div class="pick-box-fresh" id="pickBox">
+          <div class="pick-box" id="fresh">
             <div class="pick-banner">
               <div class="pick-img">
                 <img src="images/jisu/pick/1.프레쉬.jpg" alt="프레쉬4" />
@@ -1003,7 +1004,7 @@
               </div>
             </div>
           </div>
-          <div class="pick-box-care" id="pickBox">
+          <div class="pick-box" id="care">
             <div class="pick-banner">
               <div class="pick-img">
                 <img src="images/jisu/pick/2.보습케어.jpg" alt="보습케어" />
