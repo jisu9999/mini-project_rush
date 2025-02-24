@@ -29,6 +29,7 @@
   background-color: #fff;
 }
 .best-prd-box .prd-name {
+  font-family: "Pretendard-Regular";
   font-size: 18px;
   font-weight: 600;
   color: var(--color--dark--x-l);
