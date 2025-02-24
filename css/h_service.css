@@ -61,7 +61,7 @@
 .serviceSwiper {
   position: relative;
 }
-.h_service .wrap-inner .swiper-horizontal > .swiper-pagination-bullets,
+/* .h_service .wrap-inner .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-paginaton-custom,
 .swiper-pagination-fraction {
@@ -70,7 +70,7 @@
   left: 91% !important;
   width: 8% !important;
   min-width: 120px;
-}
+} */
 .h_service .wrap-inner .swiper-pagination-bullet {
   width: 20px !important;
   height: 20px !important;

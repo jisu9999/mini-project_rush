@@ -55,9 +55,9 @@
 .swiper-pagination-fraction {
   top: var(--swiper-pagination-top, 8%) !important;
   bottom: var(--swiper-pagination-bottom, auto) !important;
-  left: 91% !important;
+  left: 90% !important;
   width: 7% !important;
-  min-width: 120px ;
+  min-width: 120px;
 }
 .g_event .wrap-inner .swiper-pagination-bullet {
   width: 20px !important;
@@ -74,4 +74,26 @@
   height: 20px !important;
   color: #fff;
   background: var(--color--dark--x-l) !important;
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  .g_event .wrap-inner .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-paginaton-custom,
+  .swiper-pagination-fraction {
+    top: var(--swiper-pagination-top, 8%) !important;
+    bottom: var(--swiper-pagination-bottom, auto) !important;
+    left: 83% !important;
+    width: 7% !important;
+    min-width: 130px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .g_event .wrap-inner .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-paginaton-custom,
+  .swiper-pagination-fraction {
+   display: none;
+  }
 }
