@@ -4,29 +4,30 @@
 /* 큰제목 */
 /* ----- event txt----- */
 /* 스와이퍼 txt */
-.service-title{
+.service-title {
   font-size: 18px;
   color: var(--color--dark--x-l);
   font-weight: bold;
-  margin: 2% 0 3% 0;
+  margin: 2% 0 5% 0;
   letter-spacing: -2px;
 }
 .service-txt {
   font-size: var(--font--fonsize--x-s);
-  color: var(--color--grey--m);
-  line-height: 1.5rem;
+  color: var(--color--dark--x-l);
+  line-height: 1.2rem;
   letter-spacing: -1px;
 }
 
 /* 전체영역 */
 .h_service {
   width: 100%;
-  background-color: pink;
+  /* background-color: pink; */
 }
 /* 내부영역 */
 .h_service .wrap-inner {
   width: 100%;
-  background-color: yellow;
+  /* background-color: yellow; */
+  margin-bottom: 10%;
 }
 /* 서비스 전체영역 */
 .service-card {
@@ -35,6 +36,10 @@
   /* background-color: blue; */
 }
 /* 서비스 스와이퍼 내부영역 */
+.serviceSwiper .swiper-slide {
+  display: flex;
+  width: 100%;
+}
 .serviceSwiper a {
   width: 60%;
   background-color: red;
@@ -43,4 +48,42 @@
   display: block;
   width: 100%;
   object-fit: cover;
+  background-color: pink;
+}
+.service-sub {
+  padding: 2% 0 0 2%;
+}
+
+/* 스와이퍼 버튼 위치 조정 */
+.h_service .wrap-inner {
+  position: relative;
+}
+.serviceSwiper {
+  position: relative;
+}
+.h_service .wrap-inner .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-paginaton-custom,
+.swiper-pagination-fraction {
+  top: var(--swiper-pagination-top, 8%) !important;
+  bottom: var(--swiper-pagination-bottom, auto) !important;
+  left: 91% !important;
+  width: 8% !important;
+  min-width: 120px;
+}
+.h_service .wrap-inner .swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  text-align: center;
+  line-height: 20px !important;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+.h_service .wrap-inner .swiper-pagination-bullet-active {
+  width: 20px !important;
+  height: 20px !important;
+  color: #fff;
+  background: var(--color--dark--x-l) !important;
 }

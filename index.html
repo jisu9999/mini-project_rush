@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PTWVF73K");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -20,9 +34,12 @@
     <!-- Open Graph 프로토콜에서 사용되는 메타 태그의 속성 중 하나로, 
       페이지의 간략한 설명을 제공하는 데 사용 -->
     <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
-    <meta property="og:url" content="https://leesuhyeon1123.github.io/kittybunnypony_project/" />
+    <meta property="og:url" content="https://numberone-one.vercel.app/" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
-    <meta property="og:image" content="https://leesuhyeon1123.github.io/kittybunnypony_project/images/logo.png" />
+    <meta
+      property="og:image"
+      content="https://numberone-one.vercel.app/images/jisu/pick/1.%ED%94%84%EB%A0%88%EC%89%AC.jpg"
+    />
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="팀 프로젝트 numberone 웹사이트입니다." />
 
@@ -54,8 +71,30 @@
     <script src="js/h_service.js"></script>
     <script src="js/i-footer.js"></script>
     <title>LUSH-numberone</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XSBXMMDYH5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XSBXMMDYH5");
+    </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PTWVF73K"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- 전체레이아웃 -->
     <div class="wrap">
       <!-- a_header -->
@@ -1331,34 +1370,41 @@
       <section class="h_service">
         <div class="wrap-inner">
           <h2>러쉬에서 만나는 다채로운 서비스</h2>
+          <div class="swiper-pagination"></div>
           <div class="service-card">
             <div class="swiper serviceSwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="#"><img src="images/suhyeon/service/1.jpg" alt="visual1" /></a>
-                  <p class="service-title">디지털 덕찌</p>
-                  <span class="service-txt"
-                    >러쉬 만의 멤버십 뱃지 프로그램 덕찌력을 쌓아보세요!<br />
-                    특별한 선물이 준비되어 있어요.</span
-                  >
+                  <a href="#"><img src="images/suhyeon/service/1-1.jpg" alt="visual1" /></a>
+                  <div class="service-sub">
+                    <p class="service-title">디지털 덕찌</p>
+                    <span class="service-txt"
+                      >러쉬 만의 멤버십 뱃지 프로그램 덕찌력을 쌓아보세요!<br />
+                      특별한 선물이 준비되어 있어요.</span
+                    >
+                  </div>
                 </div>
                 <div class="swiper-slide">
                   <a href="#"><img src="images/suhyeon/service/2.png" alt="visual2" /></a>
-                  <p class="service-title">회원 선물</p>
-                  <span class="service-txt"
-                    >공식 앱 회원에게만 제공하는 365일 신선한<br />
-                    스마트 샘플과 깜짝 선물 교환권을<br />
-                    발급해드려요!</span
-                  >
+                  <div class="service-sub">
+                    <p class="service-title">회원 선물</p>
+                    <span class="service-txt"
+                      >공식 앱 회원에게만 제공하는 365일 신선한<br />
+                      스마트 샘플과 깜짝 선물 교환권을<br />
+                      발급해드려요!</span
+                    >
+                  </div>
                 </div>
                 <div class="swiper-slide">
                   <a href="#"><img src="images/suhyeon/service/3.png" alt="visual3" /></a>
-                  <p class="service-title">선물하기</p>
-                  <span class="service-txt"
-                    >주소와 연락처를 몰라도<br />
-                    향기로운 선물을 메시지 카드와 함께<br />
-                    쇼핑백에 담아 선물해 보세요!</span
-                  >
+                  <div class="service-sub">
+                    <p class="service-title">선물하기</p>
+                    <span class="service-txt"
+                      >주소와 연락처를 몰라도<br />
+                      향기로운 선물을 메시지 카드와 함께<br />
+                      쇼핑백에 담아 선물해 보세요!</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
