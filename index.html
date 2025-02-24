@@ -36,9 +36,7 @@
     <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
     <meta property="og:url" content="https://numberone-one.vercel.app/" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
-    <meta
-      property="og:image"
-      content="https://numberone-one.vercel.app/images/jisu/pick/1.%ED%94%84%EB%A0%88%EC%89%AC.jpg" />
+    <meta property="og:image" content="https://numberone-one.vercel.app/images/jisu/pick/1.%ED%94%84%EB%A0%88%EC%89%AC.jpg" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="팀 프로젝트 numberone 웹사이트입니다." />
 
@@ -69,6 +67,8 @@
     <script src="js/g_event.js"></script>
     <script src="js/h_service.js"></script>
     <script src="js/i-footer.js"></script>
+    <script src="js/upbtn_modal.js"></script>
+
     <title>LUSH-numberone</title>
 
     <!-- Google tag (gtag.js) -->
@@ -85,33 +85,27 @@
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-PTWVF73K"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"></iframe
-    ></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTWVF73K" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- 전체레이아웃 -->
     <div class="wrap">
       <!-- a_header -->
       <header class="a_header">
-        <div class="a_header_inner">
-          <!-- 햄버거바 메뉴버튼 -->
-          <a href="#" class="mb-xi" id="hamburger-menu">
-            <img src="images/jihye/a_header/icon/icon-menu.png" alt="햄버거바 아이콘" />
-          </a>
-          <!--로고  -->
-          <a href="#" class="logo">
-            <img src="images/jihye/a_header/logo.png" alt="로고" />
-          </a>
-          <!-- 메뉴 -->
-          <nav>
-            <ul class="gnb">
-              <li>
+        <div class="wrap-inner">
+          <div class="header-left">
+            <!-- 햄버거바 메뉴버튼 -->
+            <a href="#" class="mb-xi" id="hamburger-menu">
+              <img src="images/jihye/a_header/icon/icon-menu.png" alt="햄버거바 아이콘" width="30" />
+            </a>
+            <!--로고  -->
+            <a href="#" class="logo">
+              <img src="images/jihye/a_header/logo.svg" alt="로고" />
+            </a>
+            <!-- 메뉴 -->
+            <nav class="nav">
+              <div class="cartegori">
                 <a href="#">카테고리</a>
-                <ul class="depth2">
+                <ul class="depth">
                   <li>
                     <a href="#"><img src="images/jihye/a_header/gnb/gnb_vest.png" alt="베스트" />베스트</a>
                   </li>
@@ -161,37 +155,40 @@
                     <a href="#"><img src="images/jihye/a_header/gnb/gnb_experience.png" alt="체험" />체험</a>
                   </li>
                 </ul>
-              </li>
-              <li>
-                <a href="#">이벤트</a>
-                <ul class="depth2">
-                  <li><a href="#">러쉬 이벤트</a></li>
-                  <li><a href="#">선정자 발표</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">커뮤니티</a>
-                <ul class="depth2">
-                  <li><a href="#">젤러쉬</a></li>
-                  <li><a href="#">에디터픽</a></li>
-                  <li><a href="#">러쉬 타임즈</a></li>
-                  <li><a href="#">리토의 일기장</a></li>
-                  <li><a href="#">다운로드 러쉬</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">러쉬소식</a>
-                <ul class="depth2">
-                  <li><a href="#">러쉬소개</a></li>
-                  <li><a href="#">러쉬 이야기</a></li>
-                  <li><a href="#">채러티팟</a></li>
-                  <li><a href="#">서명 캠페인</a></li>
-                  <li><a href="#">매장안내</a></li>
-                  <li><a href="#">채용공고</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
+              </div>
+              <ul class="gnb">
+                <li>
+                  <a href="#">이벤트</a>
+                  <ul class="depth2">
+                    <li><a href="#">러쉬 이벤트</a></li>
+                    <li><a href="#">선정자 발표</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">커뮤니티</a>
+                  <ul class="depth2">
+                    <li><a href="#">젤러쉬</a></li>
+                    <li><a href="#">에디터픽</a></li>
+                    <li><a href="#">러쉬 타임즈</a></li>
+                    <li><a href="#">리토의 일기장</a></li>
+                    <li><a href="#">다운로드 러쉬</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">러쉬소식</a>
+                  <ul class="depth2">
+                    <li><a href="#">러쉬소개</a></li>
+                    <li><a href="#">러쉬 이야기</a></li>
+                    <li><a href="#">채러티팟</a></li>
+                    <li><a href="#">서명 캠페인</a></li>
+                    <li><a href="#">매장안내</a></li>
+                    <li><a href="#">채용공고</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
           <!-- 사용자 아이콘 -->
           <ul class="user">
             <li>
@@ -206,71 +203,71 @@
           </ul>
           <div class="a_header-bg"></div>
           <!-- 모바일용 메뉴 -->
-          <div class="mobile-nav" id="mobile-nav">
-            <ul class="gnb_mb">
-              <li>
-                <a href="#">카테고리</a>
-                <ul class="depth2_mb">
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_vest.png" alt="베스트" />베스트</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_collabo.png" alt="콜라보" />콜라보</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_limited.png" alt="리미티드" />리미티드</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_newproduts.png" alt="신제품" />신제품</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_hair.png" alt="헤어" />헤어</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_face.png" alt="페이스" />페이스</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_makeup.png" alt="메이크업" />메이크업</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_gift.png" alt="기프트" />기프트</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_bath.png" alt="배쓰" />배쓰</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_shower.png" alt="샤워" />샤워</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_body.png" alt="보디" />보디</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_perfume.png" alt="프래그런스" />프래그런스</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_accessory.png" alt="악세서리" />악세서리</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_swag.png" alt="스웨그" />스웨그</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_spa.png" alt="스파" />스파</a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="images/jihye/a_header/gnb/gnb_experience.png" alt="체험" />체험</a>
-                  </li>
-                </ul>
-              </li>
+          <nav class="mb-nav">
+            <div class="mb-cartegori">
+              <a href="#">카테고리</a>
+              <ul class="mb-depth">
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_vest.png" alt="베스트" />베스트</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_collabo.png" alt="콜라보" />콜라보</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_limited.png" alt="리미티드" />리미티드</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_newproduts.png" alt="신제품" />신제품</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_hair.png" alt="헤어" />헤어</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_face.png" alt="페이스" />페이스</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_makeup.png" alt="메이크업" />메이크업</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_gift.png" alt="기프트" />기프트</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_bath.png" alt="배쓰" />배쓰</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_shower.png" alt="샤워" />샤워</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_body.png" alt="보디" />보디</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_perfume.png" alt="프래그런스" />프래그런스</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_accessory.png" alt="악세서리" />악세서리</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_swag.png" alt="스웨그" />스웨그</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_spa.png" alt="스파" />스파</a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/jihye/a_header/gnb/gnb_experience.png" alt="체험" />체험</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="mb-gnb">
               <li>
                 <a href="#">이벤트</a>
-                <ul class="depth2">
+                <ul class="mb-depth2">
                   <li><a href="#">러쉬 이벤트</a></li>
                   <li><a href="#">선정자 발표</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#">커뮤니티</a>
-                <ul class="depth2">
+                <ul class="mb-depth2">
                   <li><a href="#">젤러쉬</a></li>
                   <li><a href="#">에디터픽</a></li>
                   <li><a href="#">러쉬 타임즈</a></li>
@@ -280,7 +277,7 @@
               </li>
               <li>
                 <a href="#">러쉬소식</a>
-                <ul class="depth2">
+                <ul class="mb-depth2">
                   <li><a href="#">러쉬소개</a></li>
                   <li><a href="#">러쉬 이야기</a></li>
                   <li><a href="#">채러티팟</a></li>
@@ -290,25 +287,97 @@
                 </ul>
               </li>
             </ul>
-            <!-- 닫기버튼 -->
-            <div class="close-menu" id="close-menu">
-              <img src="images/jihye/b_visual slide/icon-slide1.png" alt="" />
-            </div>
-          </div>
+          </nav>
         </div>
+        <div class="cartegori-bg"></div>
       </header>
       <!-- b_visual slide -->
       <section class="b_visual">
         <div class="swiper visual-sw">
-          <div class="swiper">
-            <div class="swiper-slide">
-              <img src="" alt="" />
-              <div class="box-txt">
-                <div class="wrap-inner"></div>
+          <ul class="swiper-wrapper">
+            <!-- 슬라이드1 -->
+            <li class="swiper-slide">
+              <picture>
+                <source srcset="images/jihye/b_visual slide/s_b_visual slide_1.png" media="(max-width: 767px)" />
+                <source srcset="images/jihye/b_visual slide/m_b_visual slide_1.png" media="(max-width: 1023px)" />
+                <img src="images/jihye/b_visual slide/l_b_visual slide_1.png" alt="유기농" />
+              </picture>
+              <div class="wrap-inner">
+                <div class="box-txt">
+                  <h4>자연이 주는 유기농 제품</h4>
+                  <p>러쉬는 자연에서 얻은 유기농 재료로 만듭니다.</p>
+                  <p>건강한 아름다움을 경험하세요.</p>
+                  <a href="#" class="b_visual-btn">살펴보기</a>
+                </div>
               </div>
-            </div>
-          </div>
+            </li>
+            <!-- 슬라이드2 -->
+            <li class="swiper-slide">
+              <picture>
+                <source srcset="images/jihye/b_visual slide/s_b_visual slide_2.png" media="(max-width: 767px)" />
+                <source srcset="images/jihye/b_visual slide/m_b_visual slide_2.png" media="(max-width: 1023px)" />
+                <img src="images/jihye/b_visual slide/l_b_visual slide_2.png" alt="가족피크닉" />
+              </picture>
+              <div class="wrap-inner">
+                <div class="box-txt">
+                  <h4>소중한 가족과의 순간, 더 특별하게</h4>
+                  <p>가족들과 즐기는 피크닉 속 러쉬 제품</p>
+                  <p></p>
+                  <a href="#" class="b_visual-btn">살펴보기</a>
+                </div>
+              </div>
+            </li>
+            <!-- 슬라이드3 -->
+            <li class="swiper-slide">
+              <picture>
+                <source srcset="images/jihye/b_visual slide/s_b_visual slide_3.png" media="(max-width: 767px)" />
+                <source srcset="images/jihye/b_visual slide/m_b_visual slide_3.png" media="(max-width: 1023px)" />
+                <img src="images/jihye/b_visual slide/l_b_visual slide_3.png" alt="나이트케어" />
+              </picture>
+              <div class="wrap-inner">
+                <div class="box-txt">
+                  <h4>깊은 휴식을 위한 나이트 케어</h4>
+                  <p>하루의 피로를 씻어내고,</p>
+                  <p>편안한 밤을 위한 특별한 스킨케어 루틴.</p>
+                  <a href="#" class="b_visual-btn">살펴보기</a>
+                </div>
+              </div>
+            </li>
+            <!-- 슬라이드4 -->
+            <li class="swiper-slide">
+              <picture>
+                <source srcset="images/jihye/b_visual slide/s_b_visual slide_4.png" media="(max-width: 767px)" />
+                <source srcset="images/jihye/b_visual slide/m_b_visual slide_4.png" media="(max-width: 1023px)" />
+                <img src="images/jihye/b_visual slide/l_b_visual slide_4.png" alt="사랑" />
+              </picture>
+              <div class="wrap-inner">
+                <div class="box-txt">
+                  <h4>사랑을 닮은 향기, 러쉬와 함께</h4>
+                  <p>달콤한 순간을 위한 핑크빛 감성.</p>
+                  <p>사랑하는 사람에게 러쉬를 선물하세요.</p>
+                  <a href="#" class="b_visual-btn">살펴보기</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
         </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            new Swiper(".visual-sw", {
+              loop: true,
+              autoplay: { delay: 3000 },
+              spaceBetween: 10,
+              // pagination: { el: ".swiper-pagination", clickable: true },
+              // navigation: {
+              //   nextEl: ".swiper-button-next",
+              //   prevEl: ".swiper-button-prev",
+              // },
+            });
+          });
+        </script>
       </section>
       <!-- c_best -->
       <section class="best">
@@ -1145,10 +1214,7 @@
                 <div class="review">
                   <div class="review-sub">
                     <div class="review-sub1">
-                      <p>
-                        러쉬 클렌저 딴것들도 써봤는데 저한텐 허벌리즘이 제일 맞는것 같아요.정확히 무슨 효관지는
-                        모르겠는데 피부가 개운해지는 느낌이예요ㅋㅋ
-                      </p>
+                      <p>러쉬 클렌저 딴것들도 써봤는데 저한텐 허벌리즘이 제일 맞는것 같아요.정확히 무슨 효관지는 모르겠는데 피부가 개운해지는 느낌이예요ㅋㅋ</p>
                     </div>
                     <div class="review-sub2">
                       <span class="reviewer">oncl*****</span>
@@ -1246,10 +1312,7 @@
                 <div class="review">
                   <div class="review-sub">
                     <div class="review-sub1">
-                      <p>
-                        건조한 피부에 좋다고 해서 로즈잼으로 구매했는데 향이 너무 좋아요 !! 사용감도 좋고 굿 키마랑
-                        비슷한 것 같은데 계속 사용해 보려고요.
-                      </p>
+                      <p>건조한 피부에 좋다고 해서 로즈잼으로 구매했는데 향이 너무 좋아요 !! 사용감도 좋고 굿 키마랑 비슷한 것 같은데 계속 사용해 보려고요.</p>
                     </div>
 
                     <div class="review-sub2">
@@ -1412,7 +1475,22 @@
         </div>
       </section>
       <!-- UpBtn -->
+      <section class="upbtn-group">
+        <a href="#"><img src="images/jihye/up_btn/lushTimes_icon.png" alt="러쉬타임아이콘" width="80" /></a>
+        <div id="upBtn"><img src="images/jihye/up_btn/pageUp_icon.png" alt="탑아이콘" width="50" /></div>
+      </section>
       <!-- modal -->
+      <section class="modal" id="myModal">
+        <div class="modal-content">
+          <span class="close-modal" id="closeModal"><img src="images/jihye/modal/modal_icon-x.png" alt="xicon" width="40" /></span>
+          <img src="images/jihye/modal/modal_img.png" alt="모달이미지" />
+        </div>
+        <script>
+          document.getElementById("closeModal").addEventListener("click", function () {
+            document.getElementById("myModal").style.display = "none";
+          });
+        </script>
+      </section>
     </div>
   </body>
 </html>
