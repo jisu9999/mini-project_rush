@@ -7,31 +7,37 @@
   justify-content: center;
   text-align: center;
   margin: auto;
-  background-color: red;
-  height: 400px;
+  /* background-color: red; */
+  height: 900px;
 }
 
-.b_visual_m,
-.b_visual_s {
+/* 전체영역-반응형 */
+.visual-ta {
   display: none;
+}
+.visual-mb {
+  display: none;
+}
+
+.swiper-slide > img {
+  width: 100%;
 }
 
 /* box-txt */
 .box-txt {
   text-align: left;
-  width: 500px;
-  height: 210px;
+  width: 450px;
+  height: 190px;
   background-color: #fff;
   position: absolute;
-  top: 74%;
-  left: 35%;
+  bottom: 0%;
+  left: 20%;
   transform: translate(-50%, -50%);
   padding: 30px;
 }
 
 .box-txt > h4 {
   font-size: var(--font--fontsize--s);
-  padding-top: 3%;
   padding-bottom: 3%;
   color: var(--color--dark--x-l);
   font-weight: 600;
@@ -40,7 +46,13 @@
   font-size: var(--font--fontsize--x-s);
   line-height: 20px;
 }
-
+/* 살펴보기 버튼+슬라이드 버튼img */
+.box-txt-wrap {
+  position: absolute;
+  bottom: 13%;
+  right: 5%;
+}
+/* 살펴보기 버튼 */
 .b_visual-btn {
   display: inline-block;
   margin-top: 5%;
@@ -54,16 +66,38 @@
   /* 비주얼 배너이미지 */
 }
 @media screen and (max-width: 768px) {
+  /* 전체영역 */
+  .b_visual {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    /* background-color: red; */
+    height: 900px;
+  }
   /* 비주얼 배너이미지 */
   .b_visual_l,
   .b_visual_s {
     display: none;
   }
-  ..b_visual_m {
+  .b_visual_m {
     display: block;
   }
 }
 @media screen and (max-width: 390px) {
+  /* 전체영역 */
+  .b_visual {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    /* background-color: red; */
+    height: 900px;
+  }
   /* 비주얼 배너이미지 */
   .b_visual_m,
   .b_visual_l {
