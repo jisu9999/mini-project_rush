@@ -124,3 +124,15 @@
   cursor: pointer;
   background-color: var(--color--white--x-s);
 }
+/* 반응형 */
+@media screen and (max-width: 768px){
+  .pick-box{
+    flex-direction: column;
+   
+  }
+  .pick-banner {
+    width: 100%;
+}
+.pick-products {
+  width: 100%;
+}}
