@@ -11,12 +11,13 @@
   color: var(--color--dark--x-l);
   font-size: 18px;
   font-weight: 600;
-  width: 350px;
+  max-width: 350px;
   /* max-width: 100%;  */
   min-width: 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  display: block;
 }
 /* 별점 txt */
 .f_review .star span {
@@ -55,6 +56,10 @@
   justify-content: space-between;
   width: 100%;
 }
+.product-info{
+  width: 100%;
+  position: relative;
+}
 /* 리뷰 개별영역묶음 */
 .f_review .review-card {
   width: 500px;
@@ -83,6 +88,9 @@
 /* 리뷰어 내용 */
 .review-sub {
   height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
 }
 .review-sub p {
   width: 90%;

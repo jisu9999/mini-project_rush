@@ -6,11 +6,12 @@
   font-size: 18px;
   color: var(--color--dark--x-l);
   font-weight: bold;
-  margin: 5% 0 4% 0;
+  margin: 10% 0 4% 0;
   letter-spacing: -2px;
 }
 .event-txt {
-  font-size: var(--font--fonsize--x-x-s);
+  font-size: 15px;
+  font-weight: 500;
   color: var(--color--grey--m);
   letter-spacing: -2px;
 }
@@ -18,11 +19,11 @@
 .g_event {
   width: 100%;
 }
-.g_event .wrap-inner{
+.g_event .wrap-inner {
   width: 100%;
 }
 /* swiper-js */
-.eventSwiper{
+.eventSwiper {
   width: 100%;
 }
 .eventSwiper .swiper-slide {
@@ -52,11 +53,11 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-paginaton-custom,
 .swiper-pagination-fraction {
-  top: var(--swiper-pagination-top, 4%) !important;
+  top: var(--swiper-pagination-top, 8%) !important;
   bottom: var(--swiper-pagination-bottom, auto) !important;
   left: 91% !important;
-  width: 8% !important;
-  min-width: 120px;
+  width: 7% !important;
+  min-width: 120px ;
 }
 .g_event .wrap-inner .swiper-pagination-bullet {
   width: 20px !important;

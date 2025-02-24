@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+window.addEventListener("load", function  () {
   var swiper = new Swiper(".eventSwiper", {
     slidesPerView: 3, // 한 번에 3개씩 보이게
     slidesPerGroup: 3, // 한 번에 3개씩 이동
