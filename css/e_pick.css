@@ -18,7 +18,7 @@
   background-color: var(--color--white--x-s);
   cursor: pointer;
 }
-.pickBtn.active{
+.pickBtn.active {
   background-color: var(--color--dark--x-l);
   color: var(--color--white--x-s);
 }
@@ -27,7 +27,7 @@
 }
 .pick-box {
   width: 100%;
-  display: flex; 
+  display: flex;
   gap: 50px;
   margin-top: 20px;
   display: none;
@@ -115,6 +115,7 @@
 }
 .curation {
   width: 100%;
+  font-family: "Pretendard-Regular";
   font-size: 20px;
   padding: 19px 0;
   border: 2px solid #333;
