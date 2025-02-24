@@ -44,16 +44,14 @@
   position: relative;
   /* display: flex; */
 }
+
 /* 내부영역 */
-.f_review .wrap-inner .review-all {
-  gap: 3%;
-}
-/* 리뷰 전체영역 */
 .f_review .wrap-inner {
   /* width: 100%; */
 }
+/* 리뷰 전체영역 */
 .f_review .review-all {
-  /* position: absolute; */
+  gap: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -82,6 +80,7 @@
 }
 .star span {
   display: block;
+  margin-left: 5%;
 }
 /* 리뷰어 영역 */
 .review {
@@ -110,6 +109,9 @@
   display: flex;
   flex-wrap: wrap;
 }
+.review-sub2 .date{
+  margin-left: 5%;
+}
 /* 리뷰어 서브이미지 */
 .review-sub-img a {
   display: block;
@@ -126,8 +128,9 @@
 
 /* 반응형 */
 @media screen and (max-width: 768px) {
+
   .f_review .review-card {
-    width: calc((100% - 3%) / 2);
+    width: calc((100% - 5%) / 2);
   }
 }
 
