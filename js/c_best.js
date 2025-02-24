@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
   const swiper1 = new Swiper(".bestSwiper", {
-    slidesPerView: 1.5,
-    spaceBetween: 30,
+    slidesPerView: 2,
+    spaceBetween: 20,
     pagination: {
       el: ".bestSwiper .swiper-pagination",
       clickable: true,
@@ -11,22 +11,14 @@ window.addEventListener("load", function () {
       prevEl: ".swiper1-prev",
     },
     breakpoints: {
-      450: {
-        slidesPerView: 2, //브라우저가 768보다 클 때
-        spaceBetween: 30,
+      768: {
+        slidesPerView: 3, 
+        spaceBetween: 20,
       },
-      690: {
-        slidesPerView: 3, //브라우저가 768보다 클 때
-        spaceBetween: 30,
+      1025: {
+        slidesPerView: 4, //브라우저가 769보다 클 때
+        spaceBetween: 20,
       },
-      900: {
-        slidesPerView: 4, //브라우저가 768보다 클 때
-        spaceBetween: 30,
-      },
-      // 900: {
-      //   slidesPerView: 4, //브라우저가 768보다 클 때
-      //   spaceBetween: 30,
-      // },
     },
   });
 });
