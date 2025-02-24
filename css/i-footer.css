@@ -48,7 +48,7 @@
   display: flex;
   justify-content: space-between;
   gap: 3%;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 /* 네이브바 left */
 .footer-right-2 {

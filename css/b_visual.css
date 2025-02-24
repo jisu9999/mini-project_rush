@@ -7,6 +7,8 @@
   justify-content: center;
   text-align: center;
   margin: auto;
+  background-color: red;
+  height: 400px;
 }
 
 .b_visual_m,

@@ -100,7 +100,6 @@ li ul {
   position: relative;
 }
 /* 카테고리 배경 */
-/* 카테고리 배경 */
 .a_header::after {
   content: "";
   position: absolute;
@@ -136,7 +135,6 @@ li ul {
 }
 
 /* 서브메뉴 - .depth2 */
-
 .depth2 {
   width: 100%;
   position: absolute;
@@ -160,12 +158,10 @@ li ul {
 /* 사용자 아이콘 */
 .a_header > .wrap-inner > .user {
   display: flex;
-  width: 10%;
-  /* background-color: aqua; */
+  justify-content: space-between;
 }
 .a_header > .wrap-inner > .user > li > a {
   display: block;
-  margin-left: 2%;
   margin-top: 16%;
   max-width: 35px;
   min-width: 35px;
@@ -179,23 +175,20 @@ li ul {
   display: block;
 }
 
-/* .cartegori:hover,
-.gnb > li:hover {
-  background: #f0f0f0;
-} */
 /* =========모바일용 메뉴 =========*/
 /* 아이콘 모바일 메뉴 */
 .mb-xi {
+  width: 35px;
   cursor: pointer;
   display: none;
+}
+.mb-xi > img {
+ width: 100%;
 }
 .mobile-nav {
   display: none;
 }
-.b_visual {
-  background-color: red;
-  height: 400px;
-}
+
 /* ===========반응형페이지========== */
 @media screen and (max-width: 1920px) {
 }
@@ -209,6 +202,7 @@ li ul {
   .mobile-nav {
     display: block;
   }
+
 }
 @media screen and (max-width: 390px) {
   /* 모바일메뉴 */
