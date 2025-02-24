@@ -6,12 +6,8 @@
 .pick .wrap-inner {
   /* background-color: violet; */
 }
-.pick-btn button.active {
-  display: block;
-  
-}
-.fresh,
-.care {
+
+.pickBtn {
   border: 2px solid #333;
   border-radius: 60px;
   padding: 8px 15px;
@@ -22,27 +18,18 @@
   background-color: var(--color--white--x-s);
   cursor: pointer;
 }
-.fresh {
+.pickBtn.active{
+  background-color: var(--color--dark--x-l);
+  color: var(--color--white--x-s);
+}
+#freshBtn {
   margin-right: 4px;
-  background-color: var(--color--dark--x-l);
-  color: var(--color--white--x-s);
 }
-/* .active {
-  background-color: var(--color--dark--x-l);
-  color: var(--color--white--x-s);
-} */
-.pick-box-fresh {
+.pick-box {
   width: 100%;
-  display: flex;
+  display: flex; 
   gap: 50px;
-  margin-top: 15px;
-  /* background-color: yellow; */
-}
-.pick-box-care {
-  width: 100%;
-  display: flex;
-  gap: 70px;
-  margin-top: 25px;
+  margin-top: 20px;
   display: none;
   /* background-color: yellow; */
 }
@@ -58,9 +45,9 @@
   top: 10%;
   left: 6%;
   color: var(--color--white--x-s);
-  font-size: 34px;
-  font-weight: 800;
-  line-height: 46px;
+  font-size: var(--font--fontsize--l);
+  font-weight: 900;
+  line-height: 40px;
 }
 .pick-products {
   width: 50%;
@@ -113,7 +100,7 @@
   margin-top: 10px;
 }
 .pick .price {
-  font-size:20px;
+  font-size: 20px;
   font-weight: 400;
   margin-top: 20px;
 }

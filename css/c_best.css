@@ -68,12 +68,40 @@
 .best .swiper-button-prev {
   position: absolute;
   top: 50%;
-  left: 85px;
+  transform: translateY(-50%); /* 정확히 중앙에 오도록 */
+  left: 300px;
   color: var(--color--grey--m);
 }
 .best .swiper-button-next {
   position: absolute;
   top: 50%;
-  right: 85px;
+  transform: translateY(-50%); /* 정확히 중앙에 오도록 */
+  right: 300px;
   color: var(--color--grey--m);
+}
+.best .swiper-button-next::after,
+.best .swiper-button-prev::after {
+  font-size: 36px;
+}
+/* 반응형 */
+@media screen and (max-width: 1800px) {
+  .best .swiper-button-next::after,
+  .best .swiper-button-prev::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 690px) {
+  .best h2 {
+    margin: 15% 0 6% 0;
+  }
+}
+/* @media screen and (max-width: 580px) {
+  .best h2 {
+    margin: 15% 0 9% 0;
+  }
+} */
+@media screen and (max-width: 450px) {
+  .best h2 {
+    margin: 15% 0 9% 0;
+  }
 }
