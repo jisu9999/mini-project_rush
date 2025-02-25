@@ -10,9 +10,6 @@
 @import url(i-footer.css);
 @import url(upbtn_modal.css);
 
-.b_visual {
-  height: 36vw;
-}
 * {
   margin: 0;
   padding: 0;

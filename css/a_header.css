@@ -1,17 +1,27 @@
 @charset "utf-8";
+
 li ul {
   list-style: none;
+}
+html,
+body {
+  height: 100%; /* 뷰포트 높이를 100%로 설정 */
+  margin: 0;
+  padding: 0;
+
 }
 /* ==========전체영역============ */
 .a_header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 40px;
-  margin: auto;
   z-index: 9999;
   transition: all 0.5s;
   background-color: var(--color--white--x-s);
 }
+
 .a_header > .wrap-inner {
   position: relative;
   display: flex;
@@ -64,15 +74,15 @@ li ul {
 .depth {
   position: absolute;
   top: 40px;
-  left: -100px;
-  width: 800px;
+  left: -80px;
+  width: 1000px;
   flex-wrap: wrap;
   gap: 4%;
-  padding: 0 70% 0;
+  padding: 0 80% 0;
   display: none;
   background-color: var(--color--white--x-s);
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .cartegori > li {
   display: block;
@@ -92,9 +102,7 @@ li ul {
   margin-bottom: 2px;
   width: 100%;
 }
-.a_header {
-  position: relative;
-}
+
 /* 카테고리 배경 */
 .a_header::after {
   content: "";
@@ -102,7 +110,7 @@ li ul {
   top: 40px;
   left: 0;
   width: 100%;
-  height: 210px;
+  height: 250px;
   background-color: #fff;
   /* border-top: 1px solid #dddddd; */
   display: none;
@@ -130,7 +138,7 @@ li ul {
   color: var(--color--dark--x-l);
 }
 
-/* 서브메뉴 - .depth2 */
+/* 메인>서브메뉴 - .depth2 */
 .depth2 {
   width: 100%;
   position: absolute;
@@ -148,6 +156,9 @@ li ul {
   font-size: 13px;
   color: var(--color--darkgrey--l);
   padding: 1%;
+}
+.depth2 > li > a:hover{
+  font-weight: 500;
 }
 
 /* 오른쪽영역 - 아이콘 */
@@ -174,17 +185,118 @@ li ul {
 /* =========모바일용 메뉴 =========*/
 /* 아이콘 모바일 메뉴 */
 .mb-xi {
-  width: 35px;
+  width: 40px;
   cursor: pointer;
   display: none;
 }
 .mb-xi > img {
   width: 100%;
 }
-.mobile-nav {
+
+/* close 모바일 */
+.mb-close {
   display: none;
 }
 
+/* 모바일 메뉴 */
+.wrap {
+  position: relative;
+}
+.mb-nav {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh; /* 뷰포트 기준 높이 */
+  position: fixed;
+  top: 40px;
+  left: -1400px;
+  z-index: 999;
+  padding: 30px 0;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.mb-nav .wrap-inner{
+  
+  padding: 0 20px;
+  height: 700px;
+  overflow-y: auto;
+}
+/* 크롬, 엣지, 사파리 전용 */
+.mb-nav .wrap-inner::-webkit-scrollbar {
+  width: 5px; /* 스크롤바 너비 */
+}
+
+.mb-nav .wrap-inner::-webkit-scrollbar-thumb {
+  background: rgb(227, 227, 227); /* 스크롤바 색상 */
+  border-radius: 10px;
+}
+
+.mb-nav .wrap-inner::-webkit-scrollbar-track {
+  background: lightgray; /* 트랙 배경 */
+}
+/* 메뉴가 열릴 때 */
+.mb-nav.active {
+  left: 0;
+  opacity: 1;
+}
+.a_header .wrap-inner {
+  width: 90%;
+}
+
+.mb-nav .wrap-inner {
+  width: 90%;
+}
+.mb-depth {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  padding: 5% 10%;
+}
+.mb-depth > li {
+  width: calc((100% - 15%) / 4);
+}
+.mb-depth > li > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10%;
+  font-size: var(--font--fonsize--x-x-s);
+}
+.mb-depth > li > a img {
+  width: 100%;
+  display: block;
+}
+/* 모바일메뉴 */
+.mb-gnb {
+  padding: 20px 0;
+}
+.mb-cartegori > li > a,
+.mb-gnb > li > a {
+  padding: 20px 0;
+}
+.mb-depth {
+  gap: 10px;
+}
+.mb-depth > li > a {
+  padding: 5%;
+}
+.mb-depth2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+  margin-left: 20px;
+}
+.mb-depth2 > li {
+  width: calc((100% - 9%) / 4);
+  margin-bottom: 10px;
+}
+.mb-depth2 > li > a {
+  line-height: 22px;
+  font-size: var(--font--fonsize--x-x-s);
+}
 /* ===========반응형페이지========== */
 @media screen and (max-width: 1920px) {
 }
@@ -194,11 +306,38 @@ li ul {
     cursor: pointer;
     display: block;
   }
-  /* 모바일메뉴 */
-  .mobile-nav {
+
+  .header-left .nav {
+    display: none;
+  }
+
+  /* 모바일 메뉴 보이기 */
+  .mb-nav {
     display: block;
   }
+  .mb-xi {
+    width: 20px !important;
+  }
+  .header-left {
+    gap: 2% !important;
+  }
 }
+
+@media screen and (min-width: 768px) {
+  /* 768px 이상일 때 메뉴와 아이콘 숨기기 */
+  .mb-xi,
+  .mb-nav {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 390px) {
   /* 모바일메뉴 */
+  .mb-depth > li > a {
+    padding: 0 !important;
+  }
+  .mb-depth2 > li {
+    width: calc((100% - 6%) / 3) !important;
+    margin-bottom: 10px;
+  }
 }

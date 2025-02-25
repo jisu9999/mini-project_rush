@@ -8,12 +8,12 @@
 }
 
 .pickBtn {
+  font-family: "Pretendard";
   border: 2px solid #333;
   border-radius: 60px;
   padding: 8px 15px;
-  font-family: "Pretendard-Regular";
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color--dark--x-l);
   background-color: var(--color--white--x-s);
   cursor: pointer;
@@ -29,7 +29,7 @@
   width: 100%;
   display: flex;
   gap: 50px;
-  margin-top: 20px;
+  margin-top: 15px;
   display: none;
   /* background-color: yellow; */
 }
@@ -45,9 +45,9 @@
   top: 10%;
   left: 6%;
   color: var(--color--white--x-s);
-  font-size: var(--font--fontsize--l);
-  font-weight: 900;
-  line-height: 40px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
 }
 .pick-products {
   width: 50%;
@@ -65,10 +65,8 @@
 .pick-prd-top {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  max-height: 670px; /* 컨테이너의 최대 높이를 설정  */
-  overflow-y: auto; /* 내용이 넘칠 경우 세로 스크롤 추가 */
-  padding: 10px; /* 여백설정 */
+  gap: 20px;
+  padding: 0px; /* 여백설정 */
 }
 .prd-box1-left,
 .prd-box2-left,
@@ -105,17 +103,18 @@
   margin-top: 20px;
 }
 .pick-prd-icon {
-  width: 68%;
+  width: 70%;
+  min-width: 85px;
   display: flex;
-  gap: 20px;
+  gap: 26px;
   /* background-color: pink; */
 }
 .pick-prd-icon img {
   width: 100%;
 }
 .curation {
+  font-family: "Pretendard";
   width: 100%;
-  font-family: "Pretendard-Regular";
   font-size: 20px;
   padding: 19px 0;
   border: 2px solid #333;
@@ -125,18 +124,58 @@
   background-color: var(--color--white--x-s);
 }
 /* 반응형 */
-@media screen and (max-width: 768px){
-  .pick-box{
+@media screen and (max-width: 1200px) {
+  .pick-txt {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .pick-box {
+    gap: 40px;
+  }
+  .pick-txt {
+    font-size: 2.7vw;
+    line-height: 3.6vw;
+  }
+  .pick-prd-icon {
+    min-width: 70px;
+    gap: 20px;
+  }
+  .pick-prd-top {
+    gap: 15px;
+  }
+  .curation {
+    padding: 16px 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .pickBtn {
+    padding: 7px 13px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .pick-box {
     flex-direction: column;
-   
+    gap: 45px;
+  }
+  .pick-txt {
+    font-size: 5.6vw;
+    line-height: 7.8vw;
   }
   .pick-banner {
     width: 100%;
-}
-.pick-products {
-  width: 100%;
-}
-.pick-prd-top {
-  padding: 30px; /* 여백설정 */
-}
+  }
+  .pick-products {
+    width: 100%;
+  }
+  .pick-prd-icon {
+    width: 56%;
+    gap: 28px;
+  }
+  .curation {
+    padding: 20px 0;
+    margin-top: 40px;
+  }
 }
