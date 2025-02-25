@@ -72,7 +72,7 @@
 }
 /* 별점 영역 */
 .star {
-  width: 38%;
+  width: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,17 +127,21 @@
 }
 
 /* 반응형 */
-@media screen and (max-width: 768px) {
 
+@media screen and (max-width: 768px) {
   .f_review .review-card {
     width: calc((100% - 5%) / 2);
+    /* background-color: pink; */
+    padding: 5% 0 5% 0;
+    /* background-color: pink; */
   }
 }
-
 @media screen and (max-width: 390px) {
   .f_review .review-card {
     /* width: 500px; */
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    padding-top: 10%;
   }
   .f_review .wrap-inner {
     width: 80%;
