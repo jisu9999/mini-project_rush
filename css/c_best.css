@@ -7,6 +7,9 @@
 .best .wrap-inner {
   /* background-color: thistle; */
 }
+.best .wrap-inner h2 {
+  margin-top: 10%;
+}
 .bestSwiper {
   position: relative;
   width: 100%;
@@ -29,7 +32,6 @@
   background-color: #fff;
 }
 .best-prd-box .prd-name {
-  font-family: "Pretendard-Regular";
   font-size: 18px;
   font-weight: 600;
   color: var(--color--dark--x-l);
@@ -49,6 +51,10 @@
   font-weight: 400;
   color: var(--color--dark--x-l);
   margin-bottom: 6px;
+}
+.best-prd-box .review-score {
+  display: flex;
+  gap: 4px;
 }
 .best-prd-box .review-num {
   font-size: 14px;
@@ -91,25 +97,52 @@
     display: none;
   }
 }
-@media screen and (max-width: 885px) {
-  .best-prd-box .prd-name {
-    font-size: 16px;
-  }
-  .best-prd-box .prd-category {
-    font-size: 14px;
-    margin-top: 8px;
-  }
-  .best-prd-box .price {
-    font-size: 18px;
-    margin-bottom: 5px;
+@media screen and (max-width: 1025px) {
+  .best-prd-box .review-num {
+    font-size: 13px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .best-prd-box .tag {
-    width: 45%;
-    left: 0;
+    width: 48%;
+    left: -2px;
   }
   .best-prd-box .prd-name {
-    margin-top: 16px;
+    margin-top: 4%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .best .wrap-inner h2 {
+    margin: 15% 0 7% 0;
+  }
+  .best-prd-box .prd-name {
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .best-prd-box .tag {
+    width: 40%;
+    left: -2px;
+  }
+  .best-prd-box .prd-name {
+    margin-top: 3%;
+  }
+}
+@media screen and (max-width: 529px) {
+  .best-prd-box .tag {
+    width: 35%;
+    left: -2px;
+  }
+  .best-prd-box .prd-name {
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .best-prd-box .tag {
+    width: 40%;
+    left: -2px;
+  }
+  .best-prd-box .review-num {
+    font-size: 12px;
   }
 }
