@@ -30,7 +30,7 @@ a {
   color: #333;
 }
 h2 {
-  width: 300px;
+  width: 50%;
   font-size: var(--font--fontsize--l);
   font-weight: 700;
   color: var(--color--dark--x-l);

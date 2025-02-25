@@ -9,8 +9,7 @@ window.addEventListener("load", function () {
         slidesPerGroup: 2, // 한 번에 3개씩 이동
         spaceBetween: 20, // 슬라이드 간격
         autoplay: {
-          delay: 3000, // 3초마다 자동 슬라이드
-          disableOnInteraction: false, // 사용자가 터치해도 자동 재생 유지
+          delay: 1000, // 3초마다 자동 슬라이드
         },
       },
       768: {
@@ -19,7 +18,7 @@ window.addEventListener("load", function () {
         spaceBetween: 20, // 슬라이드 간격
       },
     },
-    loop: false, // 무한 루프 방지 (2페이지까지만)
+    loop: true, // 무한 루프 방지 (2페이지까지만)
     pagination: {
       el: ".g_event .swiper-pagination",
       clickable: true,
