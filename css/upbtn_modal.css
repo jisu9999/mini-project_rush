@@ -47,6 +47,28 @@
 }
 @media screen and (max-width: 768px) {
 }
+@media screen and (max-width: 563px) {
+  /* 모달 X아이콘 */
+  .close-modal {
+    width: 30px;
+  }
+  .close-modal > img {
+    width: 100%;
+  }
+  /* 모달이미지 */
+  .modal-content {
+    width: 480px;
+  }
+  .modal-content > img {
+    width: 100%;
+  }
+  .close-modal {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+  }
+}
+
 @media screen and (max-width: 390px) {
   /* 모달 X아이콘 */
   .close-modal {

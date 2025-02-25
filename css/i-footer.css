@@ -34,7 +34,7 @@
 /* =====하단중앙===== */
 .footer-center {
   width: 25%;
-  padding-top:3%;
+  padding-top: 3%;
 }
 
 /* =====하단오른쪽===== */
@@ -55,6 +55,7 @@
   position: absolute;
   right: 0;
   padding-top: 10%;
+  /* background-color: aqua; */
 }
 .footer-right-2 > a {
   width: 100px;
@@ -69,7 +70,7 @@
 @media screen and (max-width: 1920px) {
 }
 @media screen and (max-width: 768px) {
-  .i_footer>.wrap-inner {
+  .i_footer > .wrap-inner {
     width: 100%;
     max-width: 690px;
     display: flex;
@@ -77,18 +78,35 @@
     font-size: var(--font--fontsize--x-s);
     margin: auto;
   }
-  .footer-left{
+  /* =====하단왼쪽===== */
+  .footer-left {
     width: 100%;
   }
-  .footer-center{
+  /* 로고 */
+  .footer-left-logo{
+padding-top: 5%;
+  }
+  /* =====하단중앙===== */
+  .footer-center {
     width: 100%;
     padding-top: 0%;
     margin-bottom: 5%;
   }
-  .footer-right{
+  /* =====하단오른쪽===== */
+  .footer-right {
+    display: block;
+    position: relative;
     width: 100%;
   }
-  .footer-right-2{
+  /* 앱아이콘 모음 */
+  .footer-right-1 {
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: antiquewhite; */
+  }
+  /* 네이브바 left */
+  .footer-right-2 {
+    width: 100%;
     padding-top: 5%;
     display: flex;
     justify-content: none;
@@ -99,28 +117,28 @@
     line-height: 40px;
     margin-right: 2%;
   }
-  .footer-right-2 > a:last-child{
+  .footer-right-2 > a:last-child {
     margin-right: 0;
   }
 }
 @media screen and (max-width: 390px) {
-  .i_footer>.wrap-inner {
+  .i_footer > .wrap-inner {
     width: 100%;
     max-width: 351px;
     font-size: var(--font--fonsize--x-x-s);
   }
-  .footer-left{
+  .footer-left {
     width: 100%;
   }
-  .footer-center{
+  .footer-center {
     width: 100%;
     padding-top: 0%;
     margin-bottom: 5%;
   }
-  .footer-right{
+  .footer-right {
     width: 100%;
   }
-  .footer-right-2{
+  .footer-right-2 {
     padding-top: 5%;
     display: flex;
   }
@@ -130,7 +148,7 @@
     line-height: 40px;
     margin-right: 2%;
   }
-  .footer-right-2 > a:last-child{
+  .footer-right-2 > a:last-child {
     margin-right: 0;
   }
 }
