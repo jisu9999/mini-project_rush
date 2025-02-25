@@ -1,11 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PTWVF73K");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- seo적용 -->
+    <!-- 웹페이지의 설명을 정의 -->
+    <meta name="description" content="팀 프로젝트 numberone 웹사이트입니다." />
+    <!-- 웹페이지와 관련된 키워드를 정의 -->
+    <meta name="keywords" content="numberone" />
+    <!-- 웹페이지의 저자를 정의  -->
+    <meta name="author" content="1team" />
+    <!-- 소셜 미디어에서 페이지가 공유될때 사용되는 제목 -->
+    <meta property="og:title" content="numberone" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 사이트 이름 -->
+    <meta property="og:site_name" content="numberone" />
+    <!-- 소셜 미디어에서 페이지가 웹사이트임을 명시 -->
+    <meta property="og:type" content="website" />
+    <!-- Open Graph 프로토콜에서 사용되는 메타 태그의 속성 중 하나로, 
+        페이지의 간략한 설명을 제공하는 데 사용 -->
+    <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
+    <meta property="og:url" content="https://numberone-one.vercel.app/" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
+    <meta
+      property="og:image"
+      content="https://numberone-one.vercel.app/images/jisu/pick/1.%ED%94%84%EB%A0%88%EC%89%AC.jpg" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
+    <meta property="og:description" content="팀 프로젝트 numberone 웹사이트입니다." />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>상세페이지</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- a_header -->
+      <header class="a_header">
+        <div class="wrap-inner">
+          <div class="header-left">
+            <!-- 햄버거바 메뉴버튼 -->
+            <a href="#" class="mb-xi" id="hamburger-menu" width="50">
+              <img src="images/jihye/a_header/icon/icon-menu.png" alt="햄버거바 아이콘" />
+            </a>
+            <!--로고  -->
+            <a href="#" class="logo">
+              <img src="images/jihye/a_header/logo.svg" alt="로고" />
+            </a>
+            <!-- 메뉴 -->
+            <nav class="nav">
+              <ul class="cartegori">
+                <li>
+                  <a href="#">카테고리</a>
+                  <ul class="depth">
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_vest.png" alt="베스트" />베스트</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_collabo.png" alt="콜라보" />콜라보</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_limited.png" alt="리미티드" />리미티드</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_newproduts.png" alt="신제품" />신제품</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_hair.png" alt="헤어" />헤어</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_face.png" alt="페이스" />페이스</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_makeup.png" alt="메이크업" />메이크업</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_gift.png" alt="기프트" />기프트</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_bath.png" alt="배쓰" />배쓰</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_shower.png" alt="샤워" />샤워</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_body.png" alt="보디" />보디</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_perfume.png" alt="프래그런스" />프래그런스</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_accessory.png" alt="악세서리" />악세서리</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_swag.png" alt="스웨그" />스웨그</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_spa.png" alt="스파" />스파</a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/jihye/a_header/gnb/gnb_experience.png" alt="체험" />체험</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="gnb">
+                <li>
+                  <a href="#">이벤트</a>
+                  <ul class="depth2">
+                    <li><a href="#">러쉬 이벤트</a></li>
+                    <li><a href="#">선정자 발표</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">커뮤니티</a>
+                  <ul class="depth2">
+                    <li><a href="#">젤러쉬</a></li>
+                    <li><a href="#">에디터픽</a></li>
+                    <li><a href="#">러쉬 타임즈</a></li>
+                    <li><a href="#">리토의 일기장</a></li>
+                    <li><a href="#">다운로드 러쉬</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">러쉬소식</a>
+                  <ul class="depth2">
+                    <li><a href="#">러쉬소개</a></li>
+                    <li><a href="#">러쉬 이야기</a></li>
+                    <li><a href="#">채러티팟</a></li>
+                    <li><a href="#">서명 캠페인</a></li>
+                    <li><a href="#">매장안내</a></li>
+                    <li><a href="#">채용공고</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- 사용자 아이콘 -->
+          <ul class="user">
+            <li>
+              <a href="#"><img src="images/jihye/a_header/icon/icon-search.png" alt="search" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/jihye/a_header/icon/icon-user.png" alt="user" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/jihye/a_header/icon/icon-cart.png" alt="cart" /></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- detail -->
+      <!-- 전체영역 -->
+      <section class="detail">
+        <div class="wrap-inner">
+          <h2>상품 정보</h2>
+          <div class="detail-product">
+            <div class="dp-img">
+              <img src="images/suhyeon/detail/sub.jpg" alt="sub" />
+            </div>
+            <div class="dp-txt">
+              <div class="dp-tag-box">
+                <ul class="tag">
+                  <li>
+                    <img src="images/jisu/tag/new_label.png" alt="new" />
+                  </li>
+                  <li>
+                    <img src="images/jisu/tag/limited_label.png" alt="limited" />
+                  </li>
+                </ul>
+              </div>
+              <a href="#">
+                <p class="dp-name">[LIMITED] 러브 버거</p>
+                <p class="dp-category">기프트</p>
+              </a>
+              <div class="dp-price-box">
+                <span>
+                  <svg width="74" height="14" viewBox="0 0 74 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.46196 1.09019C6.68205 0.644245 7.31795 0.644244 7.53804 1.09019L8.91765 3.88558C9.00504 4.06266 9.17398 4.1854 9.36941 4.2138L12.4543 4.66206C12.9464 4.73357 13.1429 5.33835 12.7868 5.68548L10.5546 7.86138C10.4132 7.99922 10.3486 8.19782 10.382 8.39246L10.909 11.4649C10.993 11.955 10.4786 12.3288 10.0384 12.0974L7.27921 10.6468C7.10441 10.5549 6.89559 10.5549 6.7208 10.6468L3.96159 12.0974C3.52141 12.3288 3.00695 11.955 3.09102 11.4649L3.61798 8.39246C3.65136 8.19782 3.58683 7.99922 3.44542 7.86138L1.21317 5.68548C0.857064 5.33836 1.05357 4.73357 1.5457 4.66206L4.63059 4.2138C4.82602 4.1854 4.99496 4.06266 5.08235 3.88558L6.46196 1.09019Z"
+                      fill="#222222" />
+                    <path
+                      d="M21.462 1.09019C21.682 0.644245 22.318 0.644244 22.538 1.09019L23.9176 3.88558C24.005 4.06266 24.174 4.1854 24.3694 4.2138L27.4543 4.66206C27.9464 4.73357 28.1429 5.33835 27.7868 5.68548L25.5546 7.86138C25.4132 7.99922 25.3486 8.19782 25.382 8.39246L25.909 11.4649C25.993 11.955 25.4786 12.3288 25.0384 12.0974L22.2792 10.6468C22.1044 10.5549 21.8956 10.5549 21.7208 10.6468L18.9616 12.0974C18.5214 12.3288 18.007 11.955 18.091 11.4649L18.618 8.39246C18.6514 8.19782 18.5868 7.99922 18.4454 7.86138L16.2132 5.68548C15.8571 5.33836 16.0536 4.73357 16.5457 4.66206L19.6306 4.2138C19.826 4.1854 19.995 4.06266 20.0824 3.88558L21.462 1.09019Z"
+                      fill="#222222" />
+                    <path
+                      d="M36.462 1.09019C36.682 0.644245 37.318 0.644244 37.538 1.09019L38.9176 3.88558C39.005 4.06266 39.174 4.1854 39.3694 4.2138L42.4543 4.66206C42.9464 4.73357 43.1429 5.33835 42.7868 5.68548L40.5546 7.86138C40.4132 7.99922 40.3486 8.19782 40.382 8.39246L40.909 11.4649C40.993 11.955 40.4786 12.3288 40.0384 12.0974L37.2792 10.6468C37.1044 10.5549 36.8956 10.5549 36.7208 10.6468L33.9616 12.0974C33.5214 12.3288 33.007 11.955 33.091 11.4649L33.618 8.39246C33.6514 8.19782 33.5868 7.99922 33.4454 7.86138L31.2132 5.68548C30.8571 5.33836 31.0536 4.73357 31.5457 4.66206L34.6306 4.2138C34.826 4.1854 34.995 4.06266 35.0824 3.88558L36.462 1.09019Z"
+                      fill="#222222" />
+                    <path
+                      d="M51.462 1.09019C51.682 0.644245 52.318 0.644244 52.538 1.09019L53.9176 3.88558C54.005 4.06266 54.174 4.1854 54.3694 4.2138L57.4543 4.66206C57.9464 4.73357 58.1429 5.33835 57.7868 5.68548L55.5546 7.86138C55.4132 7.99922 55.3486 8.19782 55.382 8.39246L55.909 11.4649C55.993 11.955 55.4786 12.3288 55.0384 12.0974L52.2792 10.6468C52.1044 10.5549 51.8956 10.5549 51.7208 10.6468L48.9616 12.0974C48.5214 12.3288 48.007 11.955 48.091 11.4649L48.618 8.39246C48.6514 8.19782 48.5868 7.99922 48.4454 7.86138L46.2132 5.68548C45.8571 5.33836 46.0536 4.73357 46.5457 4.66206L49.6306 4.2138C49.826 4.1854 49.995 4.06266 50.0824 3.88558L51.462 1.09019Z"
+                      fill="#222222" />
+                    <path
+                      d="M66.462 1.09019C66.682 0.644245 67.318 0.644244 67.538 1.09019L68.9176 3.88558C69.005 4.06266 69.174 4.1854 69.3694 4.2138L72.4543 4.66206C72.9464 4.73357 73.1429 5.33835 72.7868 5.68548L70.5546 7.86138C70.4132 7.99922 70.3486 8.19782 70.382 8.39246L70.909 11.4649C70.993 11.955 70.4786 12.3288 70.0384 12.0974L67.2792 10.6468C67.1044 10.5549 66.8956 10.5549 66.7208 10.6468L63.9616 12.0974C63.5214 12.3288 63.007 11.955 63.091 11.4649L63.618 8.39246C63.6514 8.19782 63.5868 7.99922 63.4454 7.86138L61.2132 5.68548C60.8571 5.33836 61.0536 4.73357 61.5457 4.66206L64.6306 4.2138C64.826 4.1854 64.995 4.06266 65.0824 3.88558L66.462 1.09019Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+                <span class="review-num">22개 리뷰보기</span>
+                <p class="price">36,000원</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- i-footer -->
+      <section class="i_footer">
+        <div class="wrap-inner">
+          <!-- 하단 왼쪽 -->
+          <div class="footer-left">
+            <!-- 로고 -->
+            <div class="footer-left-logo">
+              <a href="#"><img src="images/jihye/i-footer/logo 1.png" alt="로고" width="70" /></a>
+            </div>
+            <!-- 주소 1 -->
+            <div class="footer-left-1">
+              <p>
+                서울 강남구 학동로 336 (메이트리 빌딩(matree B/D)) 1층 주식회사 러쉬코리아<br />
+                상호명 : 주식회사 러쉬코리아<br />
+                대표이사 : 우미령<br />
+                사업자 등록번호 : 201-81-77964 사업자정보확인<br />
+                통신판매업 신고번호 : 2022-서울강남-02857<br />
+                개인정보보호책임자 : 장승웅
+              </p>
+            </div>
+            <!-- a태그 그룹 2 -->
+            <div class="footer-left-2">
+              <a href="#">개인정보처리방침</a>
+              <a href="#">이용약관</a>
+              <a href="#">영상정보관리지침</a>
+            </div>
+            <!-- 주소 3 -->
+            <div class="footer-left-3">
+              <p>COPYRIGHT © LUSHKOREA.CO.LTD.ALL RIGHTS RESERVED.</p>
+            </div>
+          </div>
+          <!-- 하단 중앙 -->
+          <div class="footer-center">
+            <p>
+              1644-2357 webmaster@lush.co.kr<br /><br />
+              상담전화 13:00 ~ 16:00 (평일)<br />
+              카톡상담 10:00 ~ 16:00 (평일)
+            </p>
+          </div>
+          <!-- 하단 오른쪽 -->
+          <div class="footer-right">
+            <div class="footer-right-1">
+              <a href="#"><img src="images/jihye/i-footer/ico_youtube 1.png" alt="유튜브" /></a>
+              <a href="#"><img src="images/jihye/i-footer/ico_twitter 1.png" alt="트위터" /></a>
+              <a href="#"><img src="images/jihye/i-footer/ico_naver 1.png" alt="네이버" /></a>
+              <a href="#"><img src="images/jihye/i-footer/ico_kakao 1.png" alt="카카오" /></a>
+              <a href="#"><img src="images/jihye/i-footer/ico_blog 1.png" alt="블로그" /></a>
+            </div>
+            <div class="footer-right-2">
+              <a href="#">고객상담</a>
+              <a href="#">FAQ</a>
+              <a href="#">채용공고</a>
+              <a href="#">기업선물</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>

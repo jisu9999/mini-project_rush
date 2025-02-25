@@ -1,8 +1,6 @@
 @charset "utf-8";
 
 /* ----- service txt----- */
-/* 큰제목 */
-/* ----- event txt----- */
 /* 스와이퍼 txt */
 .service-title {
   font-size: 18px;
@@ -21,28 +19,25 @@
 /* 전체영역 */
 .h_service {
   width: 100%;
-  /* background-color: pink; */
 }
 /* 내부영역 */
 .h_service .wrap-inner {
-  /* width: 100%; */
-  /* background-color: yellow; */
   margin-bottom: 10%;
 }
 /* 서비스 전체영역 */
 .service-card {
-  width: 100%;
-  position: relative;
+  /* width: 100%; */
+  /* position: relative; */
   /* background-color: blue; */
 }
 /* 서비스 스와이퍼 내부영역 */
 .serviceSwiper .swiper-slide {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
 }
 .serviceSwiper a {
   width: 60%;
-  background-color: red;
+  /* background-color: red; */
 }
 .serviceSwiper a img {
   display: block;
@@ -90,9 +85,47 @@
 
 /* 반응형 */
 @media screen and (max-width: 768px) {
-  .service-card {
-    display: flex;
+  .g_event .wrap-inner .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-paginaton-custom,
+  .swiper-pagination-fraction {
+    /* top: var(--swiper-pagination-top, 8%) !important;
+    bottom: var(--swiper-pagination-bottom, auto) !important;
+    left: 83% !important;
+    width: 7% !important;
+    min-width: 130px; */
+    display: none;
   }
+  .serviceSwiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .serviceSwiper a {
+    width: 100%;
+    /* background-color: red; */
+  }
+  .service-sub {
+    padding-bottom: 20%;
+    /* background-color: red; */
+    }
 }
 @media screen and (max-width: 390px) {
+  .g_event .wrap-inner .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-paginaton-custom,
+  .swiper-pagination-fraction {
+    display: none;
+  }
+  .serviceSwiper a {
+    width: 100%;
+    /* background-color: red; */
+  }
+  .service-sub {
+  padding-bottom: 20%;
+  /* background-color: red; */
+  }
+  .service-txt{
+    font-size: 13px;
+  }
 }

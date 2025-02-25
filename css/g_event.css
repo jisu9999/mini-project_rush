@@ -8,12 +8,16 @@
   font-weight: bold;
   margin: 10% 0 4% 0;
   letter-spacing: -2px;
+  width: 100%;
+  text-align: left;
 }
 .event-txt {
   font-size: 15px;
   font-weight: 500;
   color: var(--color--grey--m);
   letter-spacing: -2px;
+  width: 100%;
+  text-align: left;
 }
 /* 전체영역 */
 .g_event {
@@ -82,11 +86,7 @@
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-paginaton-custom,
   .swiper-pagination-fraction {
-    top: var(--swiper-pagination-top, 8%) !important;
-    bottom: var(--swiper-pagination-bottom, auto) !important;
-    left: 83% !important;
-    width: 7% !important;
-    min-width: 130px;
+    display: none;
   }
 }
 @media screen and (max-width: 390px) {
