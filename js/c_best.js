@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
   const swiper1 = new Swiper(".bestSwiper", {
-    slidesPerView: 2,
-    spaceBetween: 20,
+    slidesPerView: 1.5,
+    spaceBetween: 15,
     pagination: {
       el: ".bestSwiper .swiper-pagination",
       clickable: true,
@@ -11,12 +11,16 @@ window.addEventListener("load", function () {
       prevEl: ".swiper1-prev",
     },
     breakpoints: {
-      768: {
-        slidesPerView: 3, 
-        spaceBetween: 20,
+      530: {
+        slidesPerView: 2,
+        spaceBetween: 15,
       },
-      1025: {
-        slidesPerView: 4, //브라우저가 769보다 클 때
+      651: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1026: {
+        slidesPerView: 4, //브라우저가 1025보다 클 때
         spaceBetween: 20,
       },
     },
