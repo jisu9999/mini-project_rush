@@ -5,13 +5,13 @@ window.addEventListener("load", function () {
     spaceBetween: 20, // 슬라이드 간격
     breakpoints: {
       //390px보다 클 경우
-      390: {
+      391: {
         slidesPerView: 2, // 한 번에 3개씩 보이게
         slidesPerGroup: 2, // 한 번에 3개씩 이동
         spaceBetween: 20, // 슬라이드 간격
       },
       //768px보다 클 경우
-      768: {
+      769: {
         slidesPerView: 3, // 한 번에 3개씩 보이게
         slidesPerGroup: 3, // 한 번에 3개씩 이동
         spaceBetween: 20, // 슬라이드 간격
