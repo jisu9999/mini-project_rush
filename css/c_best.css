@@ -26,6 +26,28 @@
 .best-prd-box .thumbnail a img {
   width: 100%;
 }
+.number{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 21px;
+  color: var(  --color--darkgrey--l);
+  font-weight: 600;
+  background-color: var( --color--lightgray--s);
+  padding: 10px 15px;
+}
+/* .best-prd-box #best-thum-1::before {
+  content: "1";
+  position: absolute; 
+  width: 40px;
+  height: 40px;
+  color: var(--color--darkgrey--l);
+  font-size: 2vw;
+  font-weight: 600;
+  text-align: center;
+  aspect-ratio: 1;
+  background-color: var(--color--lightgray--s);
+} */
 .best-prd-box .description {
   position: relative;
   padding: 40px 0 20px;
@@ -37,10 +59,10 @@
   color: var(--color--dark--x-l);
 }
 .best-prd-box .prd-category {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   color: var(--color--grey--m);
-  margin-top: 8px;
+  margin-top: 9px;
 }
 .best-prd-box .price-box {
   margin-top: 20px;
@@ -104,45 +126,68 @@
 }
 @media screen and (max-width: 900px) {
   .best-prd-box .tag {
-    width: 48%;
+    width: 45%;
     left: -2px;
   }
   .best-prd-box .prd-name {
-    margin-top: 4%;
+    margin-top: 5%;
   }
 }
 @media screen and (max-width: 768px) {
   .best .wrap-inner h2 {
-    margin: 15% 0 7% 0;
+    margin: 18% 0 7% 0;
   }
   .best-prd-box .prd-name {
     margin-top: 2%;
   }
 }
 @media screen and (max-width: 650px) {
+  .best-prd-box .prd-name {
+    margin-top: 3%;
+  }
+  .best-prd-box .prd-name {
+    font-size: 17px;
+  }
+  .best-prd-box .prd-category {
+    margin-top: 7px;
+  }
+  .best-prd-box .price {
+    font-size: 19px;
+    margin-bottom: 4px;
+  }
+}
+@media screen and (max-width: 529px) {
   .best-prd-box .tag {
-    width: 40%;
+    width: 45%;
+    left: -2px;
+  }
+  .best-prd-box .prd-name {
+    margin-top: 4%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .best-prd-box .tag {
+    width: 50%;
     left: -2px;
   }
   .best-prd-box .prd-name {
     margin-top: 3%;
   }
-}
-@media screen and (max-width: 529px) {
-  .best-prd-box .tag {
-    width: 35%;
-    left: -2px;
-  }
-  .best-prd-box .prd-name {
-    margin-top: 2%;
-  }
-}
-@media screen and (max-width: 420px) {
-  .best-prd-box .tag {
-    width: 40%;
-    left: -2px;
-  }
   .best-prd-box .review-num {
     font-size: 12px;
+  }
+  .best-prd-box .prd-name {
+    font-size: 15px;
+  }
+  .best-prd-box .prd-category {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  .best-prd-box .price {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  svg {
+    width: 70px;
   }
 }
