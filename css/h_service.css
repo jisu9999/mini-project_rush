@@ -7,13 +7,13 @@
   color: var(--color--dark--x-l);
   font-weight: bold;
   margin: 2% 0 5% 0;
-  letter-spacing: -2px;
+  /* letter-spacing: -2px; */
 }
 .service-txt {
   font-size: var(--font--fonsize--x-s);
   color: var(--color--dark--x-l);
   line-height: 1.2rem;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
 }
 
 /* 전체영역 */
@@ -110,7 +110,7 @@
     /* background-color: red; */
     }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 389px) {
   .g_event .wrap-inner .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-paginaton-custom,

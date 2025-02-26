@@ -7,16 +7,16 @@
   color: var(--color--dark--x-l);
   font-weight: bold;
   margin: 10% 0 4% 0;
-  letter-spacing: -2px;
-  width: 100%;
+  /* letter-spacing: -2px; */
+  /* width: 100%; */
   text-align: left;
 }
 .event-txt {
   font-size: 15px;
   font-weight: 500;
   color: var(--color--grey--m);
-  letter-spacing: -2px;
-  width: 100%;
+  /* letter-spacing: -2px; */
+  /* width: 100%; */
   text-align: left;
 }
 /* 전체영역 */
