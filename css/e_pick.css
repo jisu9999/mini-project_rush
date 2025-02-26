@@ -29,7 +29,7 @@
   width: 100%;
   display: flex;
   gap: 50px;
-  margin-top: 15px;
+  margin-top: 12px;
   display: none;
   /* background-color: yellow; */
 }
@@ -107,7 +107,10 @@
   min-width: 85px;
   display: flex;
   gap: 26px;
-  /* background-color: pink; */
+}
+/* heart-icon에 hover했을 때 이미지 변경 */
+.heart-icon:hover{
+  content: url("../images/jisu/pick/blackHeart_icon.png");
 }
 .pick-prd-icon img {
   width: 100%;
@@ -146,13 +149,19 @@
     gap: 15px;
   }
   .curation {
+    font-size: 18px;
     padding: 16px 0;
+    border: 1.5px solid #333;
   }
 }
 @media screen and (max-width: 900px) {
   .pickBtn {
     padding: 7px 13px;
     font-size: 15px;
+  }
+  .pick .price {
+    font-size: 19px;
+    margin-top: 17px;
   }
 }
 @media screen and (max-width: 860px) {
@@ -167,15 +176,120 @@
   .pick-banner {
     width: 100%;
   }
+  .pick .prd-name {
+    font-size: 20px;
+  }
+  .pick .prd-category {
+    font-size: 15px;
+  }
+  .pick .price {
+    font-size: 22px;
+    margin-top: 30px;
+  }
   .pick-products {
     width: 100%;
   }
   .pick-prd-icon {
-    width: 56%;
-    gap: 28px;
+    width: 60%;
+    gap: 30px;
   }
   .curation {
+    font-size: 20px;
+    padding: 25px 0;
+    margin-top: 40px;
+    border: 1.5px solid #333;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pick-prd-icon {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .pick .prd-name {
+    font-size: 19px;
+  }
+  .pick .price {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .curation {
+    font-size: 20px;
     padding: 20px 0;
     margin-top: 40px;
+    border: 1px solid #333;
+  }
+  .prd-box1-left,
+  .prd-box2-left,
+  .prd-box3-left {
+    gap: 22px;
+  }
+  .pick-prd-icon {
+    width: 65%;
+    gap: 23px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .pick .prd-name {
+    font-size: 17px;
+  }
+  .pick .price {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  .pick-prd-icon {
+    width: 70%;
+    gap: 20px;
+  }
+  .curation {
+    font-size: 18px;
+    padding: 20px 0;
+    margin-top: 36px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .pick .prd-name {
+    font-size: 16px;
+  }
+  .pick .price {
+    font-size: 18px;
+    margin-top: 13px;
+  }
+  .pick-prd-icon {
+    width: 60%;
+    gap: 16px;
+  }
+  .pick .prd-category {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  .prd-box1-left,
+  .prd-box2-left,
+  .prd-box3-left {
+    gap: 20px;
+  }
+  .curation {
+    font-size: 16px;
+    padding: 18px 0;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .prd-box1-left,
+  .prd-box2-left,
+  .prd-box3-left {
+    gap: 16px;
+  }
+  .pick .prd-name {
+    font-size: 15px;
+  }
+  .pick-prd-icon {
+    width: 20%;
+    gap: 20px;
+  }
+  .curation {
+    font-size: 14px;
+    padding: 16px 0;
+    margin-top: 26px;
   }
 }
