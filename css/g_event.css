@@ -94,6 +94,9 @@
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-paginaton-custom,
   .swiper-pagination-fraction {
-   display: none;
+    display: none;
   }
+  /* .event-txt{
+    font-size: 13px;
+  } */
 }
