@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
   const swiper1 = new Swiper(".bestSwiper", {
-    slidesPerView: 1.5,
+    slidesPerView: 2,
     spaceBetween: 15,
     pagination: {
       el: ".bestSwiper .swiper-pagination",
@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
     },
     breakpoints: {
       530: {
-        slidesPerView: 2,
+        slidesPerView: 2.5,
         spaceBetween: 15,
       },
       651: {
