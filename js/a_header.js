@@ -32,7 +32,7 @@ window.addEventListener("load", function () {
 
   //  리사이즈 시 메뉴 닫기
   window.addEventListener("resize", function () {
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 769) {
       mobileNav.classList.remove("active");
       menuIcon.style.display = "block";
       closeIcon.style.display = "none";

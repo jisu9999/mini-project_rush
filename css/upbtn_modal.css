@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* ==========upbtn================== */
 .upbtn-group {
+  width: 80px;
   cursor: pointer;
   position: fixed;
   right: 30px;
@@ -10,8 +11,18 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  /* background-color: aquamarine; */
 }
-.upbtn-group > img {
+.lushtimes {
+  width: 80px;
+}
+.lushtimes img{
+  width: 100%;
+}
+.topbt{
+  width: 50px;
+}
+.topbt img{
   width: 100%;
 }
 /* ========팝업창========= */
@@ -23,22 +34,28 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   align-items: center;
   justify-content: center;
   z-index: 99999;
 }
+/* 모달창 */
 .modal-content {
   /* background: white; */
   padding: 20px;
   text-align: center;
   position: relative;
 }
+/* 모달-리뷰창(로그인창)이동버튼 */
+.reviewbt{
+  background-color: bisque;
+}
+/* 모달-닫기버튼 */
 .close-modal {
   position: absolute;
-  top: 38px;
+  bottom: 38px;
   right: 35px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -70,6 +87,26 @@
 }
 
 @media screen and (max-width: 391px) {
+  /* ==========upbtn================== */
+  .upbtn-group {
+    width: 40px;
+    right: 5px;
+    bottom: 60px;
+    gap: 5px;
+  }
+  .lushtimes {
+    width: 40px;
+  }
+  .lushtimes img{
+    width: 100%;
+  }
+  .topbt{
+    width: 25px;
+  }
+  .topbt img{
+    width: 100%;
+  }
+
   /* 모달 X아이콘 */
   .close-modal {
     width: 20px;
