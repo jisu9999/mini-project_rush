@@ -300,7 +300,7 @@ body {
 /* ===========반응형페이지========== */
 @media screen and (max-width: 1920px) {
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   /* 햄버거바 메뉴버튼 */
   .mb-xi {
     cursor: pointer;
@@ -323,7 +323,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 769px) {
   /* 768px 이상일 때 메뉴와 아이콘 숨기기 */
   .mb-xi,
   .mb-nav {
@@ -331,7 +331,7 @@ body {
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
   /* 모바일메뉴 */
   .mb-depth > li > a {
     padding: 0 !important;
