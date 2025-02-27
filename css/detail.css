@@ -12,7 +12,7 @@ body {
 }
 /* [리미티드]러브버거 */
 .dp-name {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 650;
   color: var(--color--dark--x-l);
   margin: 5% 0 5% 0;
@@ -36,7 +36,6 @@ body {
   width: 50%;
   max-width: 1000px;
   margin: auto;
-  height: 2000px;
 }
 /* 러브버거 상단 */
 .detail-product {
@@ -67,7 +66,7 @@ body {
 .dp-txt {
   width: 50%;
   margin-left: 3%;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 /* 별점,리뷰보기 */
 .dp-price-box {
@@ -75,8 +74,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 5%;
-  /* background-color: red; */
+  margin-bottom: 3%;
 }
 .review-num {
   font-size: var(--font--fonsize--x-x-s);
@@ -87,39 +85,45 @@ body {
 .dp-cart p {
   font-size: 17px;
   color: var(--color--dark--x-l);
-  margin: 2% 0 4% 0;
+  margin: 2% 0 3% 0;
 }
 /* 수량버튼 */
 .dp-cart2 {
   display: flex;
   width: 50px;
-  background-color: pink;
 }
 .dp-cart2 button {
-  appearance: auto;
   font-family: "Pretendard";
-  text-rendering: auto;
   color: var(--color--darkgrey--l);
-  letter-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
   display: inline-block;
   text-align: center;
-  box-sizing: border-box;
   background-color: #fff;
-  margin: 0em;
-  padding-block: 1px;
+  padding-block: 3px;
   padding-inline: 8px;
-  border-width: 1px;
-  border-style: outset;
-  border-color: var(--color--grey--m);
-  border-image: initial;
+  border-width: 0px;
+  border-color: #fff;
+  cursor: pointer;
+  border: 1px solid #e2e1e1;
+}
+.dp-cart2 span {
+  font-size: ;
+  font-family: "Pretendard";
+  color: var(--color--darkgrey--l);
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  padding-block: 3px;
+  padding-inline: 8px;
+  border-width: 0px;
+  border-color: #fff;
+  cursor: pointer;
+  border: 1px solid #e2e1e1;
+  border-left: none; /* 왼쪽 테두리 없애기 */
+  border-right: none; /* 오른쪽 테두리 없애기 */
 }
 /* 구매하기 버튼 */
 .dp-buybtn {
-  padding-top: 10%;
+  padding-top: 8%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -128,13 +132,13 @@ body {
   border: 1px solid var(--color--lightgray--s);
   background-color: #fff;
   border-radius: 1px;
-  padding: 11px 0 11px 0;
+  padding: 4% 0 4% 0;
 }
 .dp-buybtn .buy2 {
   border: 1px solid var(--color--lightgray--s);
   background-color: var(--color--dark--x-l);
   border-radius: 1px;
-  padding: 11px 0 11px 0;
+  padding: 4% 0 4% 0;
 }
 .buy1 a {
   font-family: "Pretendard";
@@ -146,4 +150,95 @@ body {
   font-weight: 400;
   font-size: 17px;
   color: #fff;
+}
+/* 상세페이지 중간영역 */
+.mid-detail .wrap-inner {
+  /* background-color: pink; */
+  width: 50%;
+  max-width: 1000px;
+  margin: auto;
+  /* background-color: pink; */
+  /* text-align: center; */
+}
+.mid-detail ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  /* background-color: red; */
+  width: 30%;
+  padding: 10% 0 10% 0;
+}
+.mid-detail li a {
+  font-size: 20px;
+  font-weight: 600;
+}
+/* 상세페이지 이미지 넣기 */
+.mid-detail-sub .wrap-inner {
+  display: none;
+  /* background-color: pink; */
+  width: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+.mds-img {
+  margin: auto;
+  width: 720px;
+}
+.mds-img img {
+  width: 100%;
+  display: block;
+}
+/* 향기나는 리뷰 */
+.mid-detail-reivew .wrap-inner {
+  width: 50%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: pink; */
+}
+.mdr-star {
+  text-align: center;
+  /* margin-bottom: 10%; */
+}
+/* 리뷰 상세내용 */
+.mdr-review {
+  margin-top: 5%;
+  width: 100%;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-around;
+}
+.mdr-rv1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  width: 70%;
+}
+.mdr-rv1 li {
+  font-size: 13px;
+  color: var(--color--grey--m);
+  margin-bottom: 15%;
+}
+.mdr-rv2 {
+  font-size: 15px;
+  color: var(--color--grey--m);
+}
+.mdr-img {
+  border-radius: 10px;
+  overflow: hidden; /* 이미지가 부모 영역을 벗어나지 않도록 처리 */
+  width: 150px;
+}
+
+.mdr-img img {
+  display: block;
+  width: 100%;
+  border-radius: 10px; /* 이미지 자체에도 border-radius 설정 */
+}
+.mdr-all-review{
+  margin-bottom: 20%;
 }
