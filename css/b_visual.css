@@ -5,6 +5,7 @@
 .b_visual {
   padding-top: 40px;
   position: relative;
+  font-size: 16px;
 }
 .visual-sw {
   position: relative;
@@ -32,25 +33,22 @@
   /* text-align: left; */
   width: 40%;
   background-color: #fff;
-  padding: 2%;
+  padding: 2.5%;
 }
 .box-txt > h4 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 1.4375rem;
+  font-weight: 700;
   padding-bottom: 2%;
   color: var(--color--dark--x-l);
 }
 .box-txt > p {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 18px;
 }
-/* 살펴보기 버튼+슬라이드 버튼img */
-.box-txt-wrap {
-  width: 20%;
-  margin-left: auto;
-}
+
 /* 살펴보기 버튼 */
 .b_visual-btn {
+  position: relative;
   display: inline-block;
   margin-top: 5%;
   padding: 10px 20px;
@@ -58,6 +56,17 @@
   text-decoration: none;
   color: #222;
 }
+/* 살펴보기 버튼+슬라이드 버튼img */
+.box-txt-wrap {
+  /* float: right; */
+  position: absolute;
+  right: 28px;
+  bottom: 25px;
+  display: inline-block;
+  width: 20%;
+  margin-left: auto;
+}
+/* 반응형  tablet / mobile*/
 .b_visual-tablet {
   display: none;
 }
@@ -77,21 +86,18 @@
     padding-top: 40px;
     display: block;
   }
-  .b_visual-tablet img{
-    height: 600px;
-  }
   .b_visual-mobile {
     display: none;
   }
-  
+
   .box-txt {
     position: relative;
-
     /* text-align: left; */
     width: 100%;
     background-color: #fff;
     padding: 5%;
   }
+  /* 버튼+토글이미지 */
   .box-txt-wrap {
     width: 15%;
   }
@@ -104,13 +110,21 @@
   .b_visual-tablet {
     display: none;
   }
-  .b_visual-mobile  {
+  .b_visual-mobile {
     padding-top: 40px;
     display: block;
   }
-  .b_visual-mobile img{
-    height: 500px;
+  /* 박스텍스트 */
+  .box-txt {
+    position: relative;
+    width: 100%;
+    padding: 6%;
+    bottom: 0;
   }
+  .box-txt > h4{
+    padding-top: 10px;
+  }
+  /* 버튼+토글이미지 */
   .box-txt-wrap {
     width: 20%;
   }
