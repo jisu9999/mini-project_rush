@@ -101,22 +101,20 @@ body {
   text-rendering: auto;
   color: var(--color--darkgrey--l);
   letter-spacing: normal;
-  word-spacing: normal;
   line-height: normal;
   text-transform: none;
   text-indent: 0px;
   text-shadow: none;
   display: inline-block;
   text-align: center;
-  cursor: default;
   box-sizing: border-box;
-  background-color: buttonface;
+  background-color: #fff;
   margin: 0em;
   padding-block: 1px;
   padding-inline: 8px;
   border-width: 1px;
   border-style: outset;
-  border-color: buttonborder;
+  border-color: var(--color--grey--m);
   border-image: initial;
 }
 /* 구매하기 버튼 */

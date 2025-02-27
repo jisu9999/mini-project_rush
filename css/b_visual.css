@@ -68,7 +68,7 @@
 @media screen and (max-width: 1920px) {
   /* 비주얼 배너이미지 */
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   /* 전체영역-반응형 */
   .b_visual {
     display: none;
@@ -77,9 +77,13 @@
     padding-top: 40px;
     display: block;
   }
+  .b_visual-tablet img{
+    height: 600px;
+  }
   .b_visual-mobile {
     display: none;
   }
+  
   .box-txt {
     position: relative;
 
@@ -92,7 +96,7 @@
     width: 15%;
   }
 }
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 390px) {
   /* 전체영역-반응형 */
   .b_visual {
     display: none;
@@ -100,9 +104,12 @@
   .b_visual-tablet {
     display: none;
   }
-  .b_visual-mobile {
+  .b_visual-mobile  {
     padding-top: 40px;
     display: block;
+  }
+  .b_visual-mobile img{
+    height: 500px;
   }
   .box-txt-wrap {
     width: 20%;
