@@ -46,7 +46,7 @@
     width: 16px;
     margin-right: 5px;
 }
-button{
+.login-btn{
     width: 100%;
     height: 60px;
     border: none;
