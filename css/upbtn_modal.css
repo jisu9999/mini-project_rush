@@ -16,13 +16,13 @@
 .lushtimes {
   width: 80px;
 }
-.lushtimes img{
+.lushtimes img {
   width: 100%;
 }
-.topbt{
+.topbt {
   width: 50px;
 }
-.topbt img{
+.topbt img {
   width: 100%;
 }
 /* ========팝업창========= */
@@ -46,20 +46,33 @@
   text-align: center;
   position: relative;
 }
+.modal-content img{
+  display: block; /* 이미지의 하단 여백 제거 */
+  margin: 0;
+}
 
 /* 모달-리뷰창(로그인창)이동버튼 */
-.reviewbt{
+.reviewbt {
+  all: unset; /* 기본 스타일 초기화 */
+  width: 100%;
+  display: block;
   background-color: var(--color--dark--x-l);
   height: 40px;
+  padding: 10px 0;
+}
+.reviewbt a {
+  background-color: var(--color--dark--x-l);
+  font-size: 20px;
+  line-height: 40px;
   color: #fff;
 }
 /* 모달-닫기버튼 */
 .close-modal {
   position: absolute;
-  bottom: 38px;
-  right: 35px;
-  font-size: 1rem;
+  top: 48px;
+  right: 48px;
   cursor: pointer;
+  margin-top: 0;
 }
 
 /* ===========반응형페이지========== */
@@ -82,10 +95,11 @@
   .modal-content > img {
     width: 100%;
   }
+  /* 모달-닫기버튼 */
   .close-modal {
     position: absolute;
-    top: 30px;
-    right: 35px;
+    top: 47px;
+    right: 47px;
   }
 }
 
@@ -95,18 +109,18 @@
     width: 50px;
     right: 5px;
     bottom: 60px;
-    gap: 5px;
+    gap: 4px;
   }
   .lushtimes {
     width: 50px;
   }
-  .lushtimes img{
+  .lushtimes img {
     width: 100%;
   }
-  .topbt{
+  .topbt {
     width: 30px;
   }
-  .topbt img{
+  .topbt img {
     width: 100%;
   }
 
@@ -119,14 +133,24 @@
   }
   /* 모달이미지 */
   .modal-content {
-    width: 340px;
+    width: 300px;
   }
   .modal-content > img {
     width: 100%;
   }
+  /* 모달-닫기버튼 */
   .close-modal {
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 35px;
+  }
+  /* 모달창-리뷰작성 버튼 */
+  .reviewbt {
+    height: 25px;
+    padding: 10px 0;
+  }
+  .reviewbt a {
+    font-size: 14px;
+    line-height: 15px;
   }
 }
