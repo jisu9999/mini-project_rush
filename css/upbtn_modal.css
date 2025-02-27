@@ -46,9 +46,12 @@
   text-align: center;
   position: relative;
 }
+
 /* 모달-리뷰창(로그인창)이동버튼 */
 .reviewbt{
-  background-color: bisque;
+  background-color: var(--color--dark--x-l);
+  height: 40px;
+  color: #fff;
 }
 /* 모달-닫기버튼 */
 .close-modal {
@@ -62,7 +65,7 @@
 /* ===========반응형페이지========== */
 @media screen and (max-width: 1920px) {
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 563px) {
   /* 모달 X아이콘 */
@@ -86,22 +89,22 @@
   }
 }
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 390px) {
   /* ==========upbtn================== */
   .upbtn-group {
-    width: 40px;
+    width: 50px;
     right: 5px;
     bottom: 60px;
     gap: 5px;
   }
   .lushtimes {
-    width: 40px;
+    width: 50px;
   }
   .lushtimes img{
     width: 100%;
   }
   .topbt{
-    width: 25px;
+    width: 30px;
   }
   .topbt img{
     width: 100%;
