@@ -1,0 +1,72 @@
+@charset "utf-8";
+.login-container {
+  padding: 130px 0px 0px;
+}
+.login-box {
+  width: 420px;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  /* background-color: yellowgreen; */
+}
+.login-box-top {
+  position: relative;
+  width: 100px;
+  /* background-color: violet; */
+}
+.login-box-top img {
+  width: 100%;
+}
+.login-box-top h3 {
+    font-weight: 700;
+  font-size: 21px;
+  color: var(--color--dark--x-l);
+  text-align: left;
+}
+.login_form {
+  margin-top: 80px;
+  /* background-color: thistle; */
+}
+#login-input {
+  font-family: "Pretendard";
+  font-size: 16px;
+  font-weight: 400;
+  width: 420px;
+  border: none; /* 전체 테두리 제거 */
+  border-bottom: 1px solid #757575; /* 아래쪽에만 테두리 추가 */
+  padding: 18px 10px;
+}
+.id-save{
+    display: flex;
+    margin-top: 16px;
+    margin-left: 10px;
+    
+}
+#idSave{
+    width: 16px;
+    margin-right: 5px;
+}
+button{
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #222222;
+    border-radius: 3px;
+    color: #ffffff;
+    margin-top: 18px;
+    font-family: "Pretendard";
+    font-size: 18px;
+    font-weight: 400;
+}
+.login_intro{
+    margin: 30px 0;
+}
+.login_sch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.login_sch li{
+    border-right: 1px solid #333;
+}
