@@ -301,7 +301,7 @@ mb-gnb(ul) > mb-depth2 (li) */
 /* ===========반응형페이지========== */
 @media screen and (max-width: 1920px) {
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   /* 햄버거바 메뉴버튼 */
   .mb-xi {
     cursor: pointer;
@@ -322,7 +322,7 @@ mb-gnb(ul) > mb-depth2 (li) */
   }
 }
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 390px) {
   /* 모바일메뉴 */
   .mb-xi{
     margin-right: 3%;
