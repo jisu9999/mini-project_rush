@@ -67,7 +67,7 @@
 /* ===========반응형페이지========== */
 @media screen and (max-width: 1920px) {
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .i_footer > .wrap-inner {
     display: flex;
     flex-direction: column;
@@ -117,7 +117,7 @@
     margin-right: 0;
   }
 }
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 390px) {
   .i_footer > .wrap-inner {
     font-size: var(--font--fonsize--x-x-s);
   }
