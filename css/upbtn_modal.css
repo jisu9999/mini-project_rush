@@ -106,19 +106,19 @@
 @media screen and (max-width: 390px) {
   /* ==========upbtn================== */
   .upbtn-group {
-    width: 50px;
+    width: 60px;
     right: 5px;
     bottom: 60px;
-    gap: 4px;
+    gap: 13px;
   }
   .lushtimes {
-    width: 50px;
+    width: 60px;
   }
   .lushtimes img {
     width: 100%;
   }
   .topbt {
-    width: 30px;
+    width: 45px;
   }
   .topbt img {
     width: 100%;
