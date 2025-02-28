@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LUSH-numberone Login</title>
+    <!-- seo적용 -->
+    <!-- 웹페이지의 설명을 정의 -->
+    <meta name="description" content="팀 프로젝트 numberone 웹사이트입니다." />
+    <!-- 웹페이지와 관련된 키워드를 정의 -->
+    <meta name="keywords" content="numberone" />
+    <!-- 웹페이지의 저자를 정의  -->
+    <meta name="author" content="1team" />
+    <!-- 소셜 미디어에서 페이지가 공유될때 사용되는 제목 -->
+    <meta property="og:title" content="numberone" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 사이트 이름 -->
+    <meta property="og:site_name" content="numberone" />
+    <!-- 소셜 미디어에서 페이지가 웹사이트임을 명시 -->
+    <meta property="og:type" content="website" />
+    <!-- Open Graph 프로토콜에서 사용되는 메타 태그의 속성 중 하나로, 
+        페이지의 간략한 설명을 제공하는 데 사용 -->
+    <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
+    <meta property="og:url" content="https://numberone-one.vercel.app/" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
+    <meta
+      property="og:image"
+      content="https://numberone-one.vercel.app/images/jisu/pick/1.%ED%94%84%EB%A0%88%EC%89%AC.jpg" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
+    <meta property="og:description" content="팀 프로젝트 numberone 웹사이트입니다." />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/detail.js"></script>
+    <title>LUSH-numberone Login</title>
   </head>
   <body>
     <div class="wrap">
@@ -19,7 +58,7 @@
               <img src="images/jihye/a_header/icon/icon-x.png" class="mb-close" alt="닫기 아이콘" id="close-icon" />
             </a>
             <!--로고  -->
-            <a href="#index.html" class="logo">
+            <a href="index.html" class="logo">
               <img src="images/jihye/a_header/logo.svg" alt="로고" />
             </a>
             <!-- 메뉴 -->
@@ -136,11 +175,11 @@
           <div class="login_form">
             <div class="id_input">
               <label for="id"></label>
-              <input type="text" placeholder="아이디" id="login-input"/>
+              <input type="text" placeholder="아이디" id="login-input" />
             </div>
             <div class="pw_input">
               <label for="pw"></label>
-              <input type="password" placeholder="비밀번호" id="login-input"/>
+              <input type="password" placeholder="비밀번호" id="login-input" />
             </div>
             <div class="id-save">
               <input type="checkbox" id="idSave" />
@@ -154,13 +193,15 @@
                 <li><a href="#">비회원 주문/선물조회</a></li>
               </ul>
             </div>
-            <div class="login-orline">OR</div>
+            <div class="login-orline">
+              <span>OR</span>
+            </div>
             <ul class="other-login">
-              <li>
-                <a href="#"><img src="images/jisu/tag/kakao-logo.png" alt="카카오로 로그인" /> 카카오로 로그인</a>
+              <li class="kakao-login-btn">
+                <a href="#"><img src="images/jisu/tag/kakao-logo.png" alt="카카오로 로그인" class="kakao-login"/> 카카오로 로그인</a>
               </li>
-              <li>
-                <a href="#"><img src="images/jisu/tag/naver_white.png" alt="네이버로 로그인" /> 네이버로 로그인</a>
+              <li class="naver-login-btn">
+                <a href="#"><img src="images/jisu/tag/naver_white.png" alt="네이버로 로그인" class="naver-login" /> 네이버로 로그인</a>
               </li>
             </ul>
           </div>
