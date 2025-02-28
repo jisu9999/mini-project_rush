@@ -38,11 +38,14 @@
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/detail.css" />
+
     <!-- 제이쿼리 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Swiper JS -->
     <script src="js/detail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/upbtn_modal.js"></script>
 
     <title>상세페이지</title>
   </head>
@@ -53,12 +56,14 @@
       <header class="a_header">
         <div class="wrap-inner">
           <div class="header-left">
-            <!-- 햄버거바 메뉴버튼 -->
-            <a href="#" class="mb-xi" id="hamburger-menu" width="50">
-              <img src="images/jihye/a_header/icon/icon-menu.png" alt="햄버거바 아이콘" />
+            <!-- 햄버거 메뉴 버튼 -->
+            <a href="#" class="mb-xi" id="hamburger-menu">
+              <!-- <img src="images/jihye/a_header/icon/icon-menu.png" alt="햄버거바 아이콘" id="menu-icon" /> -->
+              <img src="images/jihye/a_header/icon/icon-menu2.png" alt="햄버거바 아이콘" id="menu-icon" />
+              <img src="images/jihye/a_header/icon/icon-x.png" class="mb-close" alt="닫기 아이콘" id="close-icon" />
             </a>
             <!--로고  -->
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
               <img src="images/jihye/a_header/logo.svg" alt="로고" />
             </a>
             <!-- 메뉴 -->
@@ -157,13 +162,14 @@
               <a href="#"><img src="images/jihye/a_header/icon/icon-search.png" alt="search" /></a>
             </li>
             <li>
-              <a href="#"><img src="images/jihye/a_header/icon/icon-user.png" alt="user" /></a>
+              <a href="login.html"><img src="images/jihye/a_header/icon/icon-user.png" alt="user" /></a>
             </li>
             <li>
-              <a href="#"><img src="images/jihye/a_header/icon/icon-cart.png" alt="cart" /></a>
+              <a href="login.html"><img src="images/jihye/a_header/icon/icon-cart.png" alt="cart" /></a>
             </li>
           </ul>
         </div>
+        <!-- 모바일 메뉴 -->
       </header>
       <!-- detail -->
       <!-- 전체영역 -->
@@ -237,20 +243,21 @@
           </div>
         </div>
       </section>
-      <!-- 상세페이지 -->
+      <!-- 목록 -->
       <section class="mid-detail">
         <div class="wrap-inner">
           <ul class="md">
-            <li><a href="#">상품설명</a></li>
+            <li id="subbtn"><a href="#">상품설명</a></li>
             <li>
               <svg width="3" height="24" viewBox="0 0 3 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="3" height="24" fill="#222222" />
               </svg>
             </li>
-            <li><a href="#">향기나는 리뷰</a></li>
+            <li id="rvbtn"><a href="#">향기나는 리뷰</a></li>
           </ul>
         </div>
       </section>
+      <!-- 상세페이지 -->
       <section class="mid-detail-sub">
         <div class="wrap-inner">
           <div class="mds-img">
@@ -345,13 +352,13 @@
                         fill="#222222" />
                     </svg>
                   </li>
-                  <li>qort****</li>
-                  <li>2025.02.14</li>
+                  <li>ll96*****</li>
+                  <li>2025.02.10</li>
                 </ul>
-                <p class="mdr-rv2">보기에도 이쁘고 물에 녹으면서 만들어내는 색은 기대 이상 입니다!!!</p>
+                <p class="mdr-rv2">너무너무 좋아요! 다음에도 구매할거에요~!</p>
               </div>
               <div class="mdr-img">
-                <img src="images/suhyeon/review/Rectangle 81.png" alt="리뷰1" />
+                <img src="images/suhyeon/review/rv2.jpg" alt="리뷰1" />
               </div>
             </div>
             <div class="mdr-review">
@@ -376,13 +383,13 @@
                         fill="#222222" />
                     </svg>
                   </li>
-                  <li>qort****</li>
-                  <li>2025.02.14</li>
+                  <li>hals****</li>
+                  <li>2025.02.01</li>
                 </ul>
-                <p class="mdr-rv2">보기에도 이쁘고 물에 녹으면서 만들어내는 색은 기대 이상 입니다!!!</p>
+                <p class="mdr-rv2">냄새가 좋아요 ㅎㅎ 재구매 의향 있습니다!</p>
               </div>
               <div class="mdr-img">
-                <img src="images/suhyeon/review/Rectangle 81.png" alt="리뷰1" />
+                <img src="images/suhyeon/review/rv.jpg" alt="리뷰3" />
               </div>
             </div>
           </div>
@@ -443,6 +450,15 @@
               <a href="#">기업선물</a>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- UpBtn -->
+      <section class="upbtn-group">
+        <a href="https://lushtimes.lush.com/view/399201020/" target="_blank" class="lushtimes">
+          <img src="images/jihye/up_btn/lushTimes_icon.png" alt="러쉬타임아이콘" />
+        </a>
+        <div id="upBtn" class="topbt">
+          <img src="images/jihye/up_btn/pageUp_icon.png" alt="탑아이콘" />
         </div>
       </section>
     </div>

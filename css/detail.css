@@ -1,5 +1,7 @@
 @charset "utf-8";
 @import url(font.css);
+@import url(i-footer.css);
+@import url(a_header.css);
 
 body {
   font-family: "Pretendard";
@@ -106,7 +108,6 @@ body {
   border: 1px solid #e2e1e1;
 }
 .dp-cart2 span {
-  font-size: ;
   font-family: "Pretendard";
   color: var(--color--darkgrey--l);
   display: inline-block;
@@ -175,8 +176,33 @@ body {
   font-weight: 600;
 }
 /* 상세페이지 이미지 넣기 */
-.mid-detail-sub .wrap-inner {
+.mid-detail-sub,
+.mid-detail-reivew {
   display: none;
+}
+
+.mid-detail-sub.active,
+.mid-detail-reivew.active {
+  display: block;
+}
+#subbtn,
+#rvbtn {
+  position: relative;
+  padding-bottom: 5px; /* 버튼과 라인 간격 조정 */
+}
+#subbtn.active::after,
+#rvbtn.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px; /* 라인 두께 */
+  background-color: #000; /* 라인 색상 */
+  position: absolute;
+  bottom: -2px; /* 버튼 아래 여백 */
+  left: 0;
+}
+.mid-detail-sub .wrap-inner {
+  /* display: none; */
   /* background-color: pink; */
   width: 50%;
   max-width: 1000px;
@@ -197,12 +223,16 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   /* background-color: pink; */
 }
 .mdr-star {
   text-align: center;
   /* margin-bottom: 10%; */
+}
+.mdr-line {
+  display: flex;
+  justify-content: center;
 }
 /* 리뷰 상세내용 */
 .mdr-review {
@@ -211,6 +241,10 @@ body {
   /* background-color: pink; */
   display: flex;
   justify-content: space-around;
+}
+.mdr-rv {
+  /* background-color: red  ; */
+  width: 50%;
 }
 .mdr-rv1 {
   display: flex;
@@ -239,6 +273,6 @@ body {
   width: 100%;
   border-radius: 10px; /* 이미지 자체에도 border-radius 설정 */
 }
-.mdr-all-review{
+.mdr-all-review {
   margin-bottom: 20%;
 }
