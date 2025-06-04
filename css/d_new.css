@@ -27,15 +27,15 @@
   background-color: #fff;
 }
 .new-prd-box .prd-name {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--color--dark--x-l);
 }
 .new-prd-box .prd-category {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   color: var(--color--grey--m);
-  margin-top: 9px;
+  margin-top: 8px;
 }
 .new-prd-box .price-box {
   margin-top: 20px;
@@ -71,6 +71,7 @@
   transform: translateY(-50%); /* 정확히 중앙에 오도록 */
   left: 300px;
   color: var(--color--grey--m);
+  z-index: 999;
 }
 .new .swiper-button-next {
   position: absolute;

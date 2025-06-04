@@ -35,6 +35,7 @@
   border: none; /* 전체 테두리 제거 */
   border-bottom: 1px solid #757575; /* 아래쪽에만 테두리 추가 */
   padding: 18px 10px;
+  margin-bottom: 1px;
 }
 .id-save {
   display: flex;
@@ -56,6 +57,7 @@
   font-family: "Pretendard";
   font-size: 18px;
   font-weight: 400;
+  cursor: pointer;
 }
 .login_intro {
   margin: 30px 0;
@@ -66,8 +68,22 @@
   justify-content: center;
 }
 .login_sch li {
-  border-right: 1px solid #333;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.login_sch li a {
+  line-height: 1;
+}
+.login_sch li:nth-child(2)::before,
+.login_sch li:nth-child(3)::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #333;
+  vertical-align: center;
+  margin: 0 14px;
 }
 .login_sch li:last-child {
   border-right: none;
@@ -90,44 +106,48 @@
   color: #aaa;
 }
 .kakao-login-btn {
+  display: flex;
+  justify-content: center;
   position: relative;
   width: 100%;
   height: 60px;
   border: none;
   background-color: #fee500;
   border-radius: 3px;
- 
   font-family: "Pretendard";
   font-size: 18px;
   font-weight: 600;
   line-height: 60px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
-.kakao-login-btn a{
-    color: #381e1f;
+.kakao-login-wrap {
+  display: flex;
+  align-items: center;
 }
-.kakao-login-btn a img {
-  position: absolute;
-  top: 18px;
-  left: 130px;
+.kakao-login-wrap a {
+  color: #381e1f;
+  margin-left: 6px;
 }
 .naver-login-btn {
+  display: flex;
+  justify-content: center;
   position: relative;
   width: 100%;
   height: 60px;
   border: none;
   background-color: #03c75a;
   border-radius: 3px;
-  
   font-family: "Pretendard";
   font-size: 18px;
   font-weight: 600;
   line-height: 60px;
+  cursor: pointer;
 }
-.naver-login-btn a{
-    color: #ffffff;
+.naver-login-wrap{
+  display: flex;
+  align-items: center;
 }
-.naver-login-btn a img {
-  position: absolute;
-  top: 12px;
-  left: 130px;
+.naver-login-btn a {
+  color: #ffffff;
 }

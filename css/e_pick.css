@@ -17,6 +17,8 @@
   color: var(--color--dark--x-l);
   background-color: var(--color--white--x-s);
   cursor: pointer;
+  z-index: 999;
+  position: relative;
 }
 .pickBtn.active {
   background-color: var(--color--dark--x-l);

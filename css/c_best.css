@@ -58,15 +58,15 @@
   background-color: #fff;
 }
 .best-prd-box .prd-name {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--color--dark--x-l);
 }
 .best-prd-box .prd-category {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   color: var(--color--grey--m);
-  margin-top: 9px;
+  margin-top: 8px;
 }
 .best-prd-box .price-box {
   margin-top: 20px;
@@ -104,6 +104,7 @@
   transform: translateY(-50%); /* 정확히 중앙에 오도록 */
   left: 300px;
   color: var(--color--grey--m);
+  z-index: 999;
 }
 .best .swiper-button-next {
   position: absolute;
