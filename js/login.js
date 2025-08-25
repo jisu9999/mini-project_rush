@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const pwValue = formPw.value.trim();
 
     if (idValue === "") {
-      e.defaultPrevented();
+      e.preventDefault();
       alert("아이디를 입력해 주세요.");
       formId.focus();
       return;
